@@ -1,3 +1,4 @@
+# SSL
 ## SSL là gì ?
 SSL được viết tắt từ Secure Sockets Layer, đây là một tiêu chuẩn của công nghệ bảo mật, truyền thông mã hóa giữa trình duyệt và máy chủ web server. SSL hoạt động và đảm bảo rằng những dữ liệu được truyền tải giữa máy chủ và trình duyệt của bạn đều được toàn vẹn, riêng tư và bảo mật.  
 ## Có bao nhiêu cách chứng thực SSL ?
@@ -50,4 +51,13 @@ Là file mã hoá được sinh ra cùng lúc khi tạo CSR. Để đơn giản,
 PFX chứa một chứng chỉ số ký số (SSL/TLS certificate), chứng chỉ được phát hành bởi một cơ quan chứng thực (Certificate Authority), cùng với khóa riêng tư tương ứng. Thông thường, tệp .pfx được sử dụng để cung cấp thông tin bảo mật cho các kết nối an toàn như HTTPS (HTTP Secure), SMTPS (SMTP Secure), và các dịch vụ khác.  
 - Đầu tiên chuyển đổi 2 file .csr và .key sang .crt : `openssl x509 -req -in tech.training.vietnix.tech.csr -signkey tech.training.vietnix.tech.key -out tech.training.vietnix.tech.crt`
 - Chuyển file crt sang pfx: `openssl pkcs12 -export -out tech.training.vietnix.tech.pfx -inkey tech.training.vietnix.tech.key -in tech.training.vietnix.tech.crt`  
-- 
+# Domain
+## Domain là gì ?
+Domain (hay tên miền) là địa chỉ độc nhất của một website trên Internet, hoạt động giống như một “ngôi nhà ảo” chứa đựng toàn bộ nội dung và thông tin của trang web. Thay vì phải ghi nhớ dãy số phức tạp của địa chỉ IP, người dùng có thể dễ dàng truy cập website bằng cách nhập tên miền vào trình duyệt.  
+## Các trạng thái của domain
+| Trạng thái | Ý nghĩa |
+| :--- | :--- |
+| OK / active | Tên miền hoạt động |
+| addPeriod | Vừa đăng ký tên miền |
+| autoRenewPeriod | Thời gian tự động gia hạn tên miền |
+| inactive | Tên miền đã được đăng ký nhưng Nameserver chưa được liên kết với tên miền |
