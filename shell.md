@@ -42,14 +42,13 @@ Sau đó nhập password của user
 `dòng 1`  
 `dòng 2`  
 `EOF`  
-## echo command
-`echo "hello"`
+# echo command
 ## Dùng echo để chèn thêm 1 dòng vào cuối file
 `echo "dong moi" >> file`  
 ## Dùng echo để overwirte nội dung của file
 `echo "overwrite" > file`
 # tail/head command
-tail: In ra 10 dòng cuối ở file
+tail: In ra 10 dòng cuối ở file  
 head: In ra 10 dòng đầu tiên ở file
 # tail và tailf
 tailf giống như tail -f : xem 10 dòng cuối ở file và cập nhật ở thời gian thực
