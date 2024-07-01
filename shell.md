@@ -11,8 +11,7 @@
 ## time= là gì
 ttl = 53
 round-trip min/avg/max = 5.2/6.9/9.0 ms
-## ssh command
-`ssh [username]@[ip]`
+# ssh command
 ## Dùng password
 `ssh [username]@[ip]`
 Sao đó nhập password của user
@@ -21,27 +20,28 @@ Sao đó nhập password của user
 ## Dùng port custom
 `ssh -p [port] [username]@[ip]`
 ## scp command
-]
-scp 1 file
-
+`scp A@ip:[đường dẫn đến tệp] B@ip:[đường dẫn đích đến]`
+## scp 1 file
+`scp A@ip:[đường dẫn đến file]/file B@ip:[đường dẫn đích đến]`
 scp 1 folder
+`scp A@ip:[đường dẫn đến thư mục]/[thư mục] B@ip:[đường dẫn đích đến]`
+# rsync command
+## rsync file
+`rsync -av source/file dest/`
+## rsync folder
+`rsync -av source/folder dest`
+## rsync increamental
 
-rsync command
+# cat command
+## cat nội dung 1 file
+`cat file`
+## cat dòng thứ <n> trong file
 
-rsync file
-
-rsync folder
-
-rsync increamental
-
-cat command
-
-cat nội dung 1 file
-
-cat dòng thứ <n> trong file
-
-cat nhiều dòng vào 1 file bằng EOF
-
+## cat nhiều dòng vào 1 file bằng EOF
+`cat <<EOF`  
+`dòng 1`  
+`dòng 2`  
+`EOF`  
 echo command
 
 Dùng echo để chèn thêm 1 dòng vào cuối file
