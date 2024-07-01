@@ -116,4 +116,4 @@ DNS hay còn được gọi là Domain Name Server là hệ thống phân giải
 - Bước 9: Khi 8 bước tra cứu DNS đã trả về địa chỉ IP cho example.com. Trình duyệt có thể đưa ra yêu cầu cho trang web. Trình duyệt tạo một yêu cầu HTTP đến địa chỉ IP.
 - Bước 10: Máy chủ tại IP đó trả về trang web sẽ được hiển thị trong trình duyệt (bước 10).
 
-01/07/2024
+01/07/2024.
