@@ -165,34 +165,33 @@ Giải nén unzip: `unzip file.zip`
 # mount/umount command
 
 ## - Add thêm một ổ cứng sdb ~ 5gb
-`fdisk /dev/sdb`
+`fdisk /dev/sdb`  
 ## - Kiểm tra được có bao nhiêu ổ cứng trên máy chủ
-`lsblk`
+`lsblk`  
 ## - Mount ổ cứng vào /mnt/test
-`mount /dev/sdb /mnt/test`
-- Umount /mnt/test
-`umount /mnt/test`
+`mount /dev/sdb /mnt/test`  
+## - Umount /mnt/test
+`umount /mnt/test`  
 # Symbolic Links, Hard Links command
 ## Định nghĩa Sym Link
-
-Định nghĩa Hard Link
-
-Ví dụ về Sym Link và Hard Link
-
-ls command
-
-Liệt kê danh sách file/thư mục
-
-Liệt kê danh sách file/thư mục và thuộc tính
-
-Show file ẩn
-
-ps command
-
-show tiến trình
-
+Liên kết mềm có thể xem như các shortcut trong Windows, tức là trỏ gián tiếp đến một file hoặc thư mục nào đó. Loại liên kết này có thể trỏ đến một file hay thư mục trên một filesystem hoặc phân vùng khác.  
+## Định nghĩa Hard Link
+Có thể hiểu như một tên bổ sung cho file hiện có. Các liên kết này liên kết hai hay nhiều tên file với nhau trong cùng một inode. Người dùng có thể tạo một hay nhiều liên kết cứng cho một file duy nhất, tuy nhiên không thể tạo cho thư mục và file trên một filesystem hoặc phân vùng khác. Các liên kết cứng chủ yếu được dùng để lưu trữ nội dung file ở một vị trí cố định, thường để tránh việc nhân bản lượng dữ liệu quá lớn.  
+## Ví dụ về Sym Link và Hard Link
+Tạo Sym Link : `ln -s sourcefile symlinkfile`   
+Tạo Hard Link : `ln sourcefile hardlinkfile`  
+# ls command
+## Liệt kê danh sách file/thư mục
+`ls`
+## Liệt kê danh sách file/thư mục và thuộc tính
+`ls -l`
+## Show file ẩn
+`ls -a`
+# ps command
+# show tiến trình
+`ps aux`
 kill tiến trình
-
+``
 top command
 
 Kiểm tra tài nguyên cpu đang sử dụng của một vài process đang chạy
