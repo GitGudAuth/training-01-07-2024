@@ -74,5 +74,44 @@ Domain (hay tên miền) là địa chỉ độc nhất của một website trê
 | serverRenewProhibited | Tên miền không thể được gia hạn |
 | serverTransferProhibited | Trạng thái không cho phép transfer tên miền. |
 | serverUpdateProhibited | Trạng thái không cho phép cập nhật tên miền. |
-|  |  |
-
+| transferPeriod | Đây là trạng thái cho phép sau khi transfer tên miền thành thông thì nhà đăng ký mới có thể yêu cầu nhà cung cấp xóa tên miền. |  
+## Subdomain là gì?
+Subdomain là tên miền phụ của tên miền chính (Domain) dùng để quản lý website hiệu quả hơn.  
+## Virtual Hosts là gì?
+Virtual Host là một dạng lưu trữ mà bạn lưu được nhiều domain khác nhau trên cùng một máy chủ sever.   
+# Mail Server
+## Tìm hiểu MX Record
+MX Record được viết tắt của từ Mail Exchange Record, có nghĩa là record giúp xác định được địa chỉ của một hoặc nhiều mail server đang chịu trách nhiệm xử lý mail cho chính tên miền đó.   
+## Tìm hiểu DKIM, SPF, PTR
+- DKIM là viết tắt của DomainKeys Identified Mail – một phương thức giúp xác nhận Email thông qua chữ ký số giúp tránh email giả mạo. Một kỹ thuật thường được sử dụng trong lừa đảo và spam email.  
+- Sender Policy Framework (SPF) là một kỹ thuật xác thực email được sử dụng để chống lại việc giả mạo email (email spoofing). Việc thiết lập SPF record giúp ngăn chặn những kẻ có mục đích xấu sử dụng domain của bạn để gửi email xấu. Những email này còn được gọi là giả mạo email (email spoofing).  
+- Bản ghi PTR (Pointer Record) là một loại bản ghi trong hệ thống DNS được sử dụng để ánh xạ một địa chỉ IP (IPv4 hoặc IPv6) thành một tên miền. Bản ghi PTR hoạt động theo chiều ngược lại so với các bản ghi DNS thông thường: thay vì ánh xạ tên miền thành địa chỉ IP (như trong bản ghi A hoặc AAAA), nó ánh xạ địa chỉ IP thành tên miền.  
+# DNS
+## DNS là gì ?
+DNS hay còn được gọi là Domain Name Server là hệ thống phân giải tên miền. DNS là hệ thống cho phép thiết lập tương ứng giữa địa chỉ IP và tên miền trên Internet.  
+## Các loại recored DNS
+- CNAME Record
+- TXT Record
+- A Record
+- AAAA Record
+- MX Record
+- SRV Record
+- NS Record  
+## Nguyên tắc làm việc của DNS
+- Khi người dùng truy cập một website, máy tính sẽ gửi yêu cầu đến máy chủ DNS cục bộ để tìm địa chỉ IP của website đó. Máy chủ DNS cục bộ sẽ kiểm tra cơ sở dữ liệu của mình xem có chứa địa chỉ IP của website hay không. Nếu có, sẽ trả về địa chỉ IP cho máy tính của người dùng.
+- Quá trình phân giải DNS bao gồm chuyển đổi tên máy chủ (chẳng hạn như www.example.com) thành địa chỉ IP thân thiện với máy tính (chẳng hạn như 192.168.1.1). Một địa chỉ IP được cung cấp cho mỗi thiết bị trên Internet và địa chỉ đó là cần thiết để tìm thiết bị Internet phù hợp. Giống như một địa chỉ đường phố được sử dụng để tìm một ngôi nhà cụ thể.
+- Khi người dùng muốn tải một trang web, một bản dịch phải xảy ra giữa những gì người dùng nhập vào trình duyệt web của họ (example.com) và địa chỉ thân thiện với máy cần thiết để định vị trang web example.com.
+- Nếu máy chủ DNS cục bộ không có địa chỉ IP của website, nó sẽ hỏi máy chủ DNS gốc. Máy chủ DNS gốc sẽ trả về địa chỉ IP của máy chủ DNS cấp cao nhất cho website.
+- Máy chủ DNS cấp cao nhất sẽ trả về địa chỉ IP của máy chủ DNS quản lý website. Máy chủ DNS quản lý sẽ trả về địa chỉ IP của trang web cho máy chủ DNS cục bộ.
+- Cuối cùng, máy chủ DNS cục bộ sẽ trả về địa chỉ IP của trang web cho máy tính của người dùng. Máy tính của người dùng sẽ sử dụng địa chỉ IP này để kết nối với website.
+## Cách phân giải địa chỉ DNS
+- Bước 1: Một người dùng nhập “example.com” vào trình duyệt web và truy vấn trên Internet. Và được nhận bởi DNS Recursive Resolver.
+- Bước 2: Resolver sau đó truy vấn một root nameserver DNS (.).
+- Bước 3: Sau đó, Root Nameserver phản hồi resolver bằng địa chỉ của máy chủ DNS tên miền cấp cao (TLD) (chẳng hạn như .com hoặc .net), nơi lưu trữ thông tin cho các tên miền của nó. Khi tìm kiếm example.com, yêu cầu ban đầu là hướng tới TLD.com.
+- Bước 4: Resovler sau đó thực hiện một yêu cầu tới TLD.com.
+- Bước 5: Sau đó, máy chủ TLD phản hồi với địa chỉ IP nameserver của domain example.com.
+- Bước 6: Cuối cùng, recursive resolver gửi một truy vấn đến nameserver của tên miền.
+- Bước 7: Địa chỉ IP cho example.com sau đó được trả về từ nameserver.
+- Bước 8: DNS Resovler sau đó trả lời trình duyệt web bằng địa chỉ IP của tên miền được yêu cầu ban đầu.
+- Bước 9: Khi 8 bước tra cứu DNS đã trả về địa chỉ IP cho example.com. Trình duyệt có thể đưa ra yêu cầu cho trang web. Trình duyệt tạo một yêu cầu HTTP đến địa chỉ IP.
+- Bước 10: Máy chủ tại IP đó trả về trang web sẽ được hiển thị trong trình duyệt (bước 10).
