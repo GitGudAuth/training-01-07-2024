@@ -9,8 +9,8 @@
 `len=28 ip=103.90.224.90 ttl=53 id=4661 icmp_seq=5 rtt=6.6 ms`  
 ## ttl= là gì
 ## time= là gì
-ttl = 53
-round-trip min/avg/max = 5.2/6.9/9.0 ms
+ttl = 53  
+round-trip min/avg/max = 5.2/6.9/9.0 ms  
 # ssh command
 ## Dùng password
 `ssh [username]@[ip]`
