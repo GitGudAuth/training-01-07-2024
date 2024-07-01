@@ -79,9 +79,9 @@ Bước nhảy 11 đến Website vietnix.vn
 ## hiển thị các socket đang listen
 `netstat -l`
 ## don't resolve hostname
-`netstat --numberic-hosts`
+`netstat --numeric-hosts`
 ## don't resolve portname
-`netstat --numberic-ports`
+`netstat --numeric-ports`
 ## display process name/PID
 `netstat -p`
 ## only show tcp socket
@@ -147,7 +147,7 @@ chown user:group [file hoặc directory]
 ## cut từ kí tự thứ <n> trở về sau
 `cut -c <n>- filedemo`
 ## cut từ kí tự thứ <n> trở về trước
-'cut -c -<n> filedemo'
+`cut -c -<n> filedemo`
 # dig comman
 ## Dùng Dig command để kiểm tra resolv record A, MX, NS
 `dig A vietnix.vn MX vietnix.vn NS vietnix.vn`
@@ -155,24 +155,27 @@ chown user:group [file hoặc directory]
 `dig @CustomDNS A vietnix.vn MX vietnix.vn NS vietnix.vn`
 # tar/zip/unzip command
 ## - Nén/Giải nén file tar.gz - Nén/Giải nén file .zip
-Nén với tar: `tar cvf file.tar filesrc`  
-Nén với gunzip: `tar cvzf file.tar.gz filesrc`
-Giải nén tar: `tar xvf file.tar `
-mount/umount command
+Nén với tar: `tar -cvf file.tar filesrc`  
+Nén với gunzip: `tar -cvzf file.tar.gz filesrc`  
+Nén với zip: `zip -rv file.zip filedemo`
+Giải nén tar: `tar -xvf file.tar`  
+Giải nén gunzip: `tar -xvf file.tar.gz`  
+Giải nén unzip: `unzip file.zip`  
 
-- Add thêm một ổ cứng sdb ~ 5gb
+# mount/umount command
 
-- Kiểm tra được có bao nhiêu ổ cứng trên máy chủ
-
-- Mount ổ cứng vào /mnt/test
-
+## - Add thêm một ổ cứng sdb ~ 5gb
+`fdisk /dev/sdb`
+## - Kiểm tra được có bao nhiêu ổ cứng trên máy chủ
+`lsblk`
+## - Mount ổ cứng vào /mnt/test
+`mount /dev/sdb /mnt/test`
 - Umount /mnt/test
+`umount /mnt/test`
+# Symbolic Links, Hard Links command
+## Định nghĩa Sym Link
 
-Symbolic Links, Hard Links command
-
-Định nghĩ Sym Link
-
-Định nghĩ Hard Link
+Định nghĩa Hard Link
 
 Ví dụ về Sym Link và Hard Link
 
