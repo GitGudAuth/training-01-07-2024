@@ -207,7 +207,7 @@ us: phần trăm cpu dành để chạy tiến trình của user
 sy: phần trăm cpu dành để chạy tiến trình của system  
 ni: phần trăm cpu dành để chạy các tiến trình không có độ ưu tiên cao  
 id: phần trăm cpu đang nhàn rỗi  
-wa: phần trăm cpu đang chờ các I/O
+wa: phần trăm cpu đang chờ các I/O  
 hi: phần trăm cpu chờ gián đoạn phần cứng  
 si: phần trăm cpu chờ gián đọan phần mềm  
 st: phần trăm cpu ảo đợi cpu giải quyết các tiến trình  
