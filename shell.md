@@ -219,6 +219,6 @@ shared: số lượng bộ nhớ được sử dụng bỏi tmpfs
 buff/cache: số lượng bộ nhớ được sử dụng bởi kernel  
 # df command
 ## Xem dung lượng disk
-`df -ah`
+`df`
 ## Phân vùng / là gì
 Là gốc của cây thư mục filesystem, chứa toàn bộ các file và thư mục của hệ điều hành  
