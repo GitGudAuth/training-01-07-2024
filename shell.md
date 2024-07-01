@@ -13,8 +13,8 @@ ttl = 53
 round-trip min/avg/max = 5.2/6.9/9.0 ms  
 # ssh command
 ## Dùng password
-`ssh [username]@[ip]`
-Sao đó nhập password của user
+`ssh [username]@[ip]`  
+Sau đó nhập password của user
 ## Dùng key
 `ssh -i [đường đẫn đến key] [username]@[ip]`
 ## Dùng port custom
