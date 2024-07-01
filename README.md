@@ -27,11 +27,27 @@ Locality Name (eg, city) []:Ho Chi Minh City
 Organization Name (eg, company) [Internet Widgits Pty Ltd]:Vietnix  
 Organizational Unit Name (eg, section) []:Tech  
 Common Name (e.g. server FQDN or YOUR name) []:Training  
-Email Address []:phongdattin@gmail.com  
+Email Address []:p**tin@gmail.com  
 
 Please enter the following 'extra' attributes
 to be sent with your certificate request
 A challenge password []:           
 An optional company name []:  
+  
+Output:
+`:~$ ls -l`  
+`total 12`  
+`-rw-rw-r-- 1 tpaityubun tpaityubun 1017 Jul  1 10:04 tech.training.vietnix.tech.csr`  
+`-rw------- 1 tpaityubun tpaityubun 1704 Jul  1 09:57 tech.training.vietnix.tech.key`  
+`-rw-rw-r-- 1 tpaityubun tpaityubun  447 Jul  1 10:11 tinphong.md`  
+## Pem file là gì ?
+PEM (Privacy Enhanced Mail) là tệp chứng chỉ bảo mật được sử dụng để thiết lập kênh liên lạc an toàn giữa máy chủ web và trình duyệt. Nó được mã hóa Base64 và có thể chứa khóa riêng, chứng chỉ máy chủ và/hoặc kết hợp các chứng chỉ khác. Các tệp PEM tương tự như các tệp chứng chỉ .der về cách sử dụng nhưng được lưu trữ dưới dạng văn bản được mã hóa Base64 thay vì dữ liệu nhị phân. Các định dạng tệp chứng chỉ tương tự khác bao gồm các tệp .cer và .crt.  
+## Private key ssl là gì ?
+Là file mã hoá được sinh ra cùng lúc khi tạo CSR. Để đơn giản, hãy hình dung CRT là phần mã hoá công khai được trình duyệt sử dụng để truy cập đến website của bạn. Vậy khi dữ liệu đến được website sẽ cần chìa khoá để mở khoá thông tin được mã hoá ở CRT.  
 
-
+## PFX file là gì ? Cách chuyển từ file crt file sang PFX file.
+Định dạng PKCS # 12 hoặc PFX là định dạng nhị phân thường được sử dụng để lưu trữ tất cả các phần tử của chuỗi tin cậy, chẳng hạn như chứng chỉ máy chủ, bất kỳ chứng chỉ trung gian nào và khóa riêng tư vào một tệp có thể mã hóa duy nhất.   
+PFX chứa một chứng chỉ số ký số (SSL/TLS certificate), chứng chỉ được phát hành bởi một cơ quan chứng thực (Certificate Authority), cùng với khóa riêng tư tương ứng. Thông thường, tệp .pfx được sử dụng để cung cấp thông tin bảo mật cho các kết nối an toàn như HTTPS (HTTP Secure), SMTPS (SMTP Secure), và các dịch vụ khác.  
+- Đầu tiên chuyển đổi 2 file .csr và .key sang .crt : `openssl x509 -req -in tech.training.vietnix.tech.csr -signkey tech.training.vietnix.tech.key -out tech.training.vietnix.tech.crt`
+- Chuyển file crt sang pfx: `openssl pkcs12 -export -out tech.training.vietnix.tech.pfx -inkey tech.training.vietnix.tech.key -in tech.training.vietnix.tech.crt`  
+- 
