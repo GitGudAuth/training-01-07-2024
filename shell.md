@@ -111,50 +111,53 @@ Bước nhảy 11 đến Website vietnix.vn
 1 = execute = x
 2 = write = w
 4 = read = r
-`chmod 777 file (full quyền)`
-`chmod 
+----------  1 root root 2274 Mar  5 18:44 filedemo  
+"-" đầu tiên cho biết loại file là gì (tệp hoặc thư mục)  
+"---" 3 gạch đầu tiên cho biết quyền thực thi của owner  
+"---" 3 gạch tiếp theo cho biết quyền thực thi của group  
+"---" 3 gạch cuối cho biết quyền thực thi của other  
+`chmod 777 filedemo (full quyền)`
+`chmod g+w filedemo (chỉ cho group quyền write)`
+`chmod u+x filedemo (cho quyền user/owner quyền execute file)`
 ## Đổi owner user/group
 chown user:group [file hoặc directory]
 ## Set Immutable Attribute
 `chattr file`
-find command
-
-find các file có đuôi .log
-
-find các folder có tên abc
-
-find các file có tên abc
-
-find các file có tên abc và thực hiện phần quyền read only cho file
-
-cp command
-
-cp file
-
-cp folder
-
-mv command
-
-mv file, folder
-
-cut command
-
-cut kí tự thứ <n> trong string
-
-cut từ kí tự thứ <n> trở về sau
-
-cut từ kí tự thứ <n> trở về trước
-
-dig command
-
-Dùng Dig command để kiểm tra resolv record A, MX, NS
-
-Dùng Dig command để kiểm tra resolv record A, MX, NS với custom DNS
-
-tar/zip/unzip command
-
-- Nén/Giải nén file tar.gz - Nén/Giải nén file .zip
-
+# find command
+## find các file có đuôi .log
+`find / -type f -name "*.log"`
+## find các folder có tên abc
+`find / -type d -name "abc"`
+## find các file có tên abc
+`find / -type f -name "abc"`
+## find các file có tên abc và thực hiện phần quyền read only cho file
+`find / -type f -name "abc" -exec chmod 444 {} \;`
+# cp command
+## cp file
+`cp src/file dest/`
+## cp folder
+`cp src/ dest/`
+# mv command
+# mv file, folder
+`mv src/file dest/`  
+`mv src/ dest/`
+# cut command
+## cut kí tự thứ <n> trong string
+`cut -c <n> filedemo`
+## cut từ kí tự thứ <n> trở về sau
+`cut -c <n>- filedemo`
+## cut từ kí tự thứ <n> trở về trước
+'cut -c -<n> filedemo'
+# dig comman
+## Dùng Dig command để kiểm tra resolv record A, MX, NS
+`dig A vietnix.vn MX vietnix.vn NS vietnix.vn`
+## Dùng Dig command để kiểm tra resolv record A, MX, NS với custom DNS
+`dig @CustomDNS A vietnix.vn MX vietnix.vn NS vietnix.vn`
+# tar/zip/unzip command
+## - Nén/Giải nén file tar.gz - Nén/Giải nén file .zip
+Nén với tar: `tar cvf file.tar filesrc`  
+Nén với gunzip: `tar cvzf file.tar.gz filesrc`
+Giải nén tar: `tar xvf file.tar `
 mount/umount command
 
 - Add thêm một ổ cứng sdb ~ 5gb
