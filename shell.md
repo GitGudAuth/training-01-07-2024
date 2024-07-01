@@ -31,77 +31,92 @@ scp 1 folder
 ## rsync folder
 `rsync -av source/folder dest`
 ## rsync increamental
-
+`rsync -av source/oldfolder remote:source/folder source/newfolder`
 # cat command
 ## cat nội dung 1 file
 `cat file`
 ## cat dòng thứ <n> trong file
-
+`cat -n file`
 ## cat nhiều dòng vào 1 file bằng EOF
 `cat <<EOF`  
 `dòng 1`  
 `dòng 2`  
 `EOF`  
-echo command
-
-Dùng echo để chèn thêm 1 dòng vào cuối file
-
+## echo command
+`echo "hello"`
+## Dùng echo để chèn thêm 1 dòng vào cuối file
+`echo "dong moi" >> file`
 Dùng echo để overwirte nội dung của file
-
-tail/head command
-
-tail và tailf
-
-sed command
-
-Dùng sed để find and replace một string trong file
-
-traceroute/tracert command
-
+`echo "overwrite" > file`
+# tail/head command
+tail: In ra 10 dòng cuối ở file
+head: In ra 10 dòng đầu tiên ở file
+# tail và tailf
+tailf giống như tail -f : xem 10 dòng cuối ở file và cập nhật ở thời gian thực
+# sed command
+## Dùng sed để find and replace một string trong file
+`sed -i 's\old\new\g' file`
+# traceroute/tracert command
 Sau khi traceroute xong giải thích chi tiết kết quả trả về
+`root@lpcomp:~# traceroute vietnix.vn`  
+`traceroute to vietnix.vn (14.225.253.240), 30 hops max, 60 byte packets`  
+` 1  192.168.0.1 (192.168.0.1)  1.796 ms  1.754 ms  3.757 ms`  
+` 2  localhost (27.71.251.149)  4.712 ms  4.687 ms  4.662 ms`  
+` 3  10.255.39.243 (10.255.39.243)  4.628 ms 10.255.39.241 (10.255.39.241)  4.517 ms  4.492 ms`  
+` 4  * * *`  
+` 5  localhost (27.68.236.46)  7.373 ms localhost (27.68.236.240)  7.370 ms localhost (27.68.236.242)  5.706 ms`  
+` 6  static.vnpt.vn (113.171.45.66)  7.369 ms 203.113.187.98 (203.113.187.98)  5.162 ms *`  
+` 7  static.vnpt.vn (113.171.45.66)  4.971 ms  4.619 ms static.vnpt.vn (113.171.45.38)  5.632 ms`  
+` 8  static.vnpt.vn (113.171.45.38)  5.590 ms static.vnpt.vn (113.171.46.226)  5.575 ms  5.552 ms`  
+` 9  172.16.34.46 (172.16.34.46)  5.538 ms static.vnpt.vn (113.171.48.190)  5.510 ms 172.16.34.46 (172.16.34.46)  5.507 ms`  
+`10  172.16.34.46 (172.16.34.46)  5.492 ms  5.477 ms *`  
+`11  static.vnpt.vn (14.225.253.240)  4.121 ms  3.974 ms  4.128 ms`  
 
-netstat command
+Bước nhảy 1 ra 192.168.0.1 (gatewate)  
+Bước nhảy 6 - 10 ra gateway bên vnpt   
+Bước nhảy 11 đến Website vietnix.vn  
+# netstat command
+## hiển thị các socket đang listen
+`netstat -l`
+## don't resolve hostname
+`netstat --numberic-hosts`
+## don't resolve portname
+`netstat --numberic-ports`
+## display process name/PID
+`netstat -p`
+## only show tcp socket
+`netstat -t`
+## only show udp socket
+`netstat -u`
 
-hiển thị các socket đang listen
-
-don't resolve hostname
-
-don't resolve portname
-
-display process name/PID
-
-only show tcp socket
-
-only show udp socket
-
-sort command
-
-sort theo thứ tự tăng dần
-
-sort theo thứ tự giảm dần
-
-sort theo column
-
-uniq command
-
-lọc ra các dòng lặp lại trong một file
-
-lọc ra các dòng lặp lại trong file và đếm số lượng các dòng lặp lại
-
-wc command
-
-Đếm số dòng trong file
-
-Đếm số kí tự trong file
-
-chmod, chown, chattr command
-
-Phân quyền bằng số, phân quyền bằng chữ
-
-Đổi owner user/group
-
-Set Immutable Attribute
-
+# sort command
+## sort theo thứ tự tăng dần
+`sort`
+## sort theo thứ tự giảm dần
+`sort -r`
+## sort theo column
+`sort -k`
+# uniq command
+## lọc ra các dòng lặp lại trong một file
+`uniq file`
+## lọc ra các dòng lặp lại trong file và đếm số lượng các dòng lặp lại
+`uniq -c file`
+# wc command
+## Đếm số dòng trong file
+`wc -l file`
+## Đếm số kí tự trong file
+`wc -m file`
+# chmod, chown, chattr command
+## Phân quyền bằng số, phân quyền bằng chữ
+1 = execute = x
+2 = write = w
+4 = read = r
+`chmod 777 file (full quyền)`
+`chmod 
+## Đổi owner user/group
+chown user:group [file hoặc directory]
+## Set Immutable Attribute
+`chattr file`
 find command
 
 find các file có đuôi .log
