@@ -166,6 +166,11 @@ Giải nén unzip: `unzip file.zip`
 
 ## - Add thêm một ổ cứng sdb ~ 5gb
 `fdisk /dev/sdb`  
+n : tạo phân vùng mới    
+p : primary    
+1: phân vùng 1  
++5G : thêm ổ cứng 5gb  
+w: save lại  
 ## - Kiểm tra được có bao nhiêu ổ cứng trên máy chủ
 `lsblk`  
 ## - Mount ổ cứng vào /mnt/test
