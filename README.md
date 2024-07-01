@@ -61,3 +61,18 @@ Domain (hay tên miền) là địa chỉ độc nhất của một website trê
 | addPeriod | Vừa đăng ký tên miền |
 | autoRenewPeriod | Thời gian tự động gia hạn tên miền |
 | inactive | Tên miền đã được đăng ký nhưng Nameserver chưa được liên kết với tên miền |
+| pendingCreate | Tên miền chờ được đăng ký |
+| pendingDelete | Tên miền hết hạn hoặc chờ được xóa |
+| pendingRenew | Tên miền chờ gia hạn |
+| pendingRestore | Tên miền hết hạn và chờ gia hạn |
+| pendingTransfer | Tên miền chờ chuyển đổi nhà đăng ký |
+| pendingUpdate | Tên miền đang chờ cập nhật. |
+| redemptionPeriod | Tên miền đã hết hạn và rơi vào trạng thái cần thanh toán phí gia hạn nếu muốn tiếp tục sử dụng. |
+| renewPeriod | Tên miền được gia hạn |
+| serverDeleteProhibited | Ngăn tên miền bị xóa |
+| serverHold | Tên miền không được kích hoạt trong DNS |
+| serverRenewProhibited | Tên miền không thể được gia hạn |
+| serverTransferProhibited | Trạng thái không cho phép transfer tên miền. |
+| serverUpdateProhibited | Trạng thái không cho phép cập nhật tên miền. |
+|  |  |
+
