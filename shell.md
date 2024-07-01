@@ -57,7 +57,7 @@ tailf giống như tail -f : xem 10 dòng cuối ở file và cập nhật ở t
 ## Dùng sed để find and replace một string trong file
 `sed -i 's\old\new\g' file`
 # traceroute/tracert command
-Sau khi traceroute xong giải thích chi tiết kết quả trả về
+Sau khi traceroute xong giải thích chi tiết kết quả trả về  
 `root@lpcomp:~# traceroute vietnix.vn`  
 `traceroute to vietnix.vn (14.225.253.240), 30 hops max, 60 byte packets`  
 ` 1  192.168.0.1 (192.168.0.1)  1.796 ms  1.754 ms  3.757 ms`  
