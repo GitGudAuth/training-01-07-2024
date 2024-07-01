@@ -188,22 +188,32 @@ Tạo Hard Link : `ln sourcefile hardlinkfile`
 ## Show file ẩn
 `ls -a`
 # ps command
-# show tiến trình
+## show tiến trình
 `ps aux`
-kill tiến trình
-``
-top command
-
-Kiểm tra tài nguyên cpu đang sử dụng của một vài process đang chạy
-
-Giải thích về Load average, us, sy, ni, id, wa, hi, si, st, zombie process, sleeping process
-
-free command
-
-Giải thích ram used, free, shared, buff/cache, free
-
-df command
-
-Xem dung lượng disk
-
-Phân vùng / là gì
+## kill tiến trình
+`pkill tientrinh`  
+`kill -9 PID`  
+# top command
+## Kiểm tra tài nguyên cpu đang sử dụng của một vài process đang chạy
+`top`
+## Giải thích về Load average, us, sy, ni, id, wa, hi, si, st, zombie process, sleeping process
+Load average : Thời gian load trung bình của cpu trong thời gian nhất định  
+us: phần trăm cpu dành để chạy tiến trình của user  
+sy: phần trăm cpu dành để chạy tiến trình của system  
+ni: phần trăm cpu dành để chạy các tiến trình không có độ ưu tiên cao
+id: phần trăm cpu đang nhàn rỗi  
+wa: phần trăm cpu đang chờ các I/O
+hi: phần trăm cpu chờ gián đoạn phần cứng  
+si: phần trăm cpu chờ gián đọan phần mềm  
+st: phần trăm cpu ảo đợi cpu giải quyết các tiến trình  
+# free command
+## Giải thích ram used, free, shared, buff/cache, free
+used: số lượng bộ nhớ đang được sử dụng      
+free: số lượng bộ nhớ còn trống    
+shared: số lượng bộ nhớ được sử dụng bỏi tmpfs  
+buff/cache: số lượng bộ nhớ được sử dụng bởi kernel  
+# df command
+## Xem dung lượng disk
+`df -ah`
+## Phân vùng / là gì
+Là gốc của cây thư mục filesystem, chứa toàn bộ các file và thư mục của hệ điều hành  
