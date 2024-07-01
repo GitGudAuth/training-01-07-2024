@@ -23,7 +23,7 @@ Sao đó nhập password của user
 `scp A@ip:[đường dẫn đến tệp] B@ip:[đường dẫn đích đến]`
 ## scp 1 file
 `scp A@ip:[đường dẫn đến file]/file B@ip:[đường dẫn đích đến]`
-scp 1 folder
+## scp 1 folder
 `scp A@ip:[đường dẫn đến thư mục]/[thư mục] B@ip:[đường dẫn đích đến]`
 # rsync command
 ## rsync file
@@ -45,8 +45,8 @@ scp 1 folder
 ## echo command
 `echo "hello"`
 ## Dùng echo để chèn thêm 1 dòng vào cuối file
-`echo "dong moi" >> file`
-Dùng echo để overwirte nội dung của file
+`echo "dong moi" >> file`  
+## Dùng echo để overwirte nội dung của file
 `echo "overwrite" > file`
 # tail/head command
 tail: In ra 10 dòng cuối ở file
@@ -116,9 +116,9 @@ Bước nhảy 11 đến Website vietnix.vn
 "---" 3 gạch đầu tiên cho biết quyền thực thi của owner  
 "---" 3 gạch tiếp theo cho biết quyền thực thi của group  
 "---" 3 gạch cuối cho biết quyền thực thi của other  
-`chmod 777 filedemo (full quyền)`
-`chmod g+w filedemo (chỉ cho group quyền write)`
-`chmod u+x filedemo (cho quyền user/owner quyền execute file)`
+`chmod 777 filedemo (full quyền)`  
+`chmod g+w filedemo (chỉ cho group quyền write)`  
+`chmod u+x filedemo (cho quyền user/owner quyền execute file)`  
 ## Đổi owner user/group
 chown user:group [file hoặc directory]
 ## Set Immutable Attribute
@@ -157,7 +157,7 @@ chown user:group [file hoặc directory]
 ## - Nén/Giải nén file tar.gz - Nén/Giải nén file .zip
 Nén với tar: `tar -cvf file.tar filesrc`  
 Nén với gunzip: `tar -cvzf file.tar.gz filesrc`  
-Nén với zip: `zip -rv file.zip filedemo`
+Nén với zip: `zip -rv file.zip filedemo`  
 Giải nén tar: `tar -xvf file.tar`  
 Giải nén gunzip: `tar -xvf file.tar.gz`  
 Giải nén unzip: `unzip file.zip`  
