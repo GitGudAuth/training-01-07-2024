@@ -97,9 +97,10 @@ Certificate Request:
 ## Pem file là gì ?
 PEM (Privacy Enhanced Mail) là tệp chứng chỉ bảo mật được sử dụng để thiết lập kênh liên lạc an toàn giữa máy chủ web và trình duyệt. Nó được mã hóa Base64 và có thể chứa khóa riêng, chứng chỉ máy chủ và/hoặc kết hợp các chứng chỉ khác. Các tệp PEM tương tự như các tệp chứng chỉ .der về cách sử dụng nhưng được lưu trữ dưới dạng văn bản được mã hóa Base64 thay vì dữ liệu nhị phân. Các định dạng tệp chứng chỉ tương tự khác bao gồm các tệp .cer và .crt.  
 Tạo file .pem bằng file .csr và .key  
-`openssl x509 -req -sha256 -days 365 -in tech.training.vietnix.tech.csr -signkey tech.training.vietnix.tech.key -out tech.training.vietnix.tech.pem`  
-`Certificate request self-signature ok`  
-`subject=C = VN, ST = Some-State, L = Ho Chi Minh city, O = Vietnix, OU = Tech, CN = Training`  
+```openssl x509 -req -sha256 -days 365 -in tech.training.vietnix.tech.csr -signkey tech.training.vietnix.tech.key -out tech.training.vietnix.tech.pem
+Certificate request self-signature ok  
+subject=C = VN, ST = Some-State, L = Ho Chi Minh city, O = Vietnix, OU = Tech, CN = Training
+```  
 ## Private key ssl là gì ?
 Là file mã hoá được sinh ra cùng lúc khi tạo CSR. Để đơn giản, hãy hình dung CRT là phần mã hoá công khai được trình duyệt sử dụng để truy cập đến website của bạn. Vậy khi dữ liệu đến được website sẽ cần chìa khoá để mở khoá thông tin được mã hoá ở CRT.   
 ## PFX file là gì ? Cách chuyển từ file crt file sang PFX file.
@@ -109,9 +110,10 @@ Cách tạo file PFX:
 - Đầu tiên chuyển đổi 2 file .csr và .key sang .crt : `openssl x509 -req -in tech.training.vietnix.tech.csr -signkey tech.training.vietnix.tech.key -out tech.training.vietnix.tech.crt`
 - Chuyển file crt sang pfx: `openssl pkcs12 -export -out tech.training.vietnix.tech.pfx -inkey tech.training.vietnix.tech.key -in tech.training.vietnix.tech.crt`
 - Hoặc chuyển file .pem sang pfx:
-`openssl pkcs12 -export -out tech.training.vietnix.tech.pfx -inkey tech.training.vietnix.tech.key -in tech.training.vietnix.tech.pem`  
-`Enter Export Password:`  
-`Verifying - Enter Export Password:`  
+```openssl pkcs12 -export -out tech.training.vietnix.tech.pfx -inkey tech.training.vietnix.tech.key -in tech.training.vietnix.tech.pem  
+Enter Export Password:
+Verifying - Enter Export Password:
+```
 # Domain
 ## Domain là gì ?
 Domain (hay tên miền) là địa chỉ độc nhất của một website trên Internet, hoạt động giống như một “ngôi nhà ảo” chứa đựng toàn bộ nội dung và thông tin của trang web. Thay vì phải ghi nhớ dãy số phức tạp của địa chỉ IP, người dùng có thể dễ dàng truy cập website bằng cách nhập tên miền vào trình duyệt.  
