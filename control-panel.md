@@ -32,5 +32,5 @@ Cây thư mục nằm ở:
 CLI : v-*
 ## 5.So sánh 3 control panel
 | STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
-| --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | Có CLI | Không | Có | Có | Có |
