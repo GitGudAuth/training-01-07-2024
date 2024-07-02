@@ -136,17 +136,17 @@ usage: netstat [-vWeenNcCF] [<Af>] -r         netstat {-V|--version|-h|--help}
        netstat { [-vWeenNac] -i | [-cnNe] -M | -s [-6tuw] }
 ```
 ## hiển thị các socket đang listen
-`netstat -l`
+```netstat -l```
 ## don't resolve hostname
-`netstat --numeric-hosts`
+```netstat --numeric-hosts```
 ## don't resolve portname
-`netstat --numeric-ports`
+```netstat --numeric-ports```
 ## display process name/PID
-`netstat -p`
+```netstat -p```
 ## only show tcp socket
-`netstat -t`
+```netstat -t```
 ## only show udp socket
-`netstat -u`
+```netstat -u```
 
 # sort command
 Lệnh sort giúp người dùng sắp xếp nội dung của tệp văn bản theo một thứ tự nhất định. Lệnh này có thể sắp xếp một tệp văn bản theo thứ tự bảng chữ cái, số, theo cột và hơn thế nữa, theo thứ tự bình thường hoặc ngược lại.     
@@ -156,11 +156,11 @@ Cú pháp:
        sort [OPTION]... --files0-from=F
 ```
 ## sort theo thứ tự tăng dần
-`sort`
+```sort```
 ## sort theo thứ tự giảm dần
-`sort -r`
+```sort -r```
 ## sort theo column
-`sort -k`
+```sort -k```
 # uniq command
 uniq là lệnh dòng dể báo cáo số dòng lập lại trong một file
 Cú pháp:
@@ -168,9 +168,9 @@ Cú pháp:
        uniq [OPTION]... [INPUT [OUTPUT]]
 ```
 ## lọc ra các dòng lặp lại trong một file
-`uniq file`
+```uniq file```
 ## lọc ra các dòng lặp lại trong file và đếm số lượng các dòng lặp lại
-`uniq -c file`
+```uniq -c file```
 # wc command
 wc là câu lệnh để đếm số lượng câu, chữ, dòng trong một file, hoặc có thể dùng để tìm số lượng thư mục trong một cây thư mục.   
 Cú pháp:
@@ -180,9 +180,9 @@ Usage: wc [OPTION]... [FILE]...
 
 ```
 ## Đếm số dòng trong file
-`wc -l file`
+```wc -l file```
 ## Đếm số kí tự trong file
-`wc -m file`
+```wc -m file```
 # chmod, chown, chattr command
 chmod là lệnh dùng để thay đổi quyền trên thư mục hoặc tệp tin  
 Cú pháp :  
@@ -220,7 +220,7 @@ chmod u+x filedemo (cho quyền user/owner quyền execute file)
 ## Đổi owner user/group
 chown user:group [file hoặc directory]
 ## Set Immutable Attribute
-`chattr file`
+```chattr file```
 # find command
 find là câu lệnh dùng để tìm các file và thư mục trong cây thư mục.  
 Cú pháp:  
@@ -228,13 +228,13 @@ Cú pháp:
 find  [-H]  [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [ex‐pression]
 ```
 ## find các file có đuôi .log
-`find / -type f -name "*.log"`
+```find / -type f -name "*.log"```
 ## find các folder có tên abc
-`find / -type d -name "abc"`
+```find / -type d -name "abc"```
 ## find các file có tên abc
-`find / -type f -name "abc"`
+```find / -type f -name "abc"```
 ## find các file có tên abc và thực hiện phần quyền read only cho file
-`find / -type f -name "abc" -exec chmod 444 {} \;`
+```find / -type f -name "abc" -exec chmod 444 {} \;```
 # cp command
 cp là lệnh cơ bản trong linux, dùng để sao chép tệp và thư mục trong hệ thống  
 Cú pháp:  
@@ -244,7 +244,7 @@ Usage: cp [OPTION]... [-T] SOURCE DEST
   or:  cp [OPTION]... -t DIRECTORY SOURCE...
 ```
 ## cp file
-`cp src/file dest/`
+```cp src/file dest/`
 ## cp folder
 `cp src/ dest/`
 # mv command
@@ -318,8 +318,8 @@ Liên kết mềm có thể xem như các shortcut trong Windows, tức là tr�
 ## Định nghĩa Hard Link
 Có thể hiểu như một tên bổ sung cho file hiện có. Các liên kết này liên kết hai hay nhiều tên file với nhau trong cùng một inode. Người dùng có thể tạo một hay nhiều liên kết cứng cho một file duy nhất, tuy nhiên không thể tạo cho thư mục và file trên một filesystem hoặc phân vùng khác. Các liên kết cứng chủ yếu được dùng để lưu trữ nội dung file ở một vị trí cố định, thường để tránh việc nhân bản lượng dữ liệu quá lớn.  
 ## Ví dụ về Sym Link và Hard Link
-Tạo Sym Link : `ln -s sourcefile symlinkfile`   
-Tạo Hard Link : `ln sourcefile hardlinkfile`  
+Tạo Sym Link : ```ln -s sourcefile symlinkfile```   
+Tạo Hard Link : ```ln sourcefile hardlinkfile```  
 # ls command
 ## Liệt kê danh sách file/thư mục
 ```ls```
