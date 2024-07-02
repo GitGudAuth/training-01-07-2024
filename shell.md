@@ -1,12 +1,14 @@
 # ping/hping3 ping đến domain vietnix.vn sau đó giải thích
-<pre>root@lpcomp:~# hping3 -1 vietnix.vn  
+```
+root@lpcomp:~# hping3 -1 vietnix.vn  
 HPING vietnix.vn (wlp0s20f3 103.90.224.90): icmp mode set, 28 headers + 0 data bytes
 len=28 ip=103.90.224.90 ttl=53 id=3956 icmp_seq=0 rtt=109.0 ms
 len=28 ip=103.90.224.90 ttl=53 id=4134 icmp_seq=1 rtt=6.7 ms 
 len=28 ip=103.90.224.90 ttl=53 id=4369 icmp_seq=2 rtt=5.4 ms  
 len=28 ip=103.90.224.90 ttl=53 id=4452 icmp_seq=3 rtt=8.1 ms  
 len=28 ip=103.90.224.90 ttl=53 id=4625 icmp_seq=4 rtt=7.0 ms  
-len=28 ip=103.90.224.90 ttl=53 id=4661 icmp_seq=5 rtt=6.6 ms</pre>  
+len=28 ip=103.90.224.90 ttl=53 id=4661 icmp_seq=5 rtt=6.6 ms
+```  
 ## ttl= là gì
 ttl là time to live, là thời gian sống của một gói tin
 ## time= là gì
@@ -15,14 +17,16 @@ round-trip min/avg/max = 5.2/6.9/9.0 ms
 # ssh command
 SSH (Secure Shell) là một giao thức mạng giúp người dùng truy cập an toàn vào một thiết bị qua một mạng không được bảo mật.
 Cú pháp:  
-<pre>usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
+```
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
            [-c cipher_spec] [-D [bind_address:]port] [-E log_file]
            [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file]
            [-J destination] [-L address] [-l login_name] [-m mac_spec]
            [-O ctl_cmd] [-o option] [-P tag] [-p port] [-R address]
            [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
            destination [command [argument ...]]
-       ssh [-Q query_option]</pre>
+       ssh [-Q query_option]
+```
 ## Dùng password
 `ssh [username]@[ip]`  
 Sau đó nhập password của user
@@ -41,13 +45,15 @@ Cú pháp:
 # rsync command
 Rsync là một công cụ command line rất nhanh và linh hoạt, được dùng để đồng bộ hoá file và thư mục giữa hai vị trí khác nhau.   
 Cú pháp:  
-<pre>Usage: rsync [OPTION]... SRC [SRC]... DEST
+```
+Usage: rsync [OPTION]... SRC [SRC]... DEST
   or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
   or   rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
   or   rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
   or   rsync [OPTION]... [USER@]HOST:SRC [DEST]
   or   rsync [OPTION]... [USER@]HOST::SRC [DEST]
-  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]</pre>
+  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
+```
 ## rsync file
 `rsync -a file-old file-new`
 ## rsync folder
@@ -61,7 +67,7 @@ Cú pháp:
 `cat -n file`
 ## cat nhiều dòng vào 1 file bằng EOF
 ```
-cat <<EOF  
+cat <<EOF  > FILE
 dòng 1  
 dòng 2  
 EOF
