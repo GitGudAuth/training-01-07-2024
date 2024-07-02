@@ -219,6 +219,11 @@ chown user:group [file hoặc directory]
 ## Set Immutable Attribute
 `chattr file`
 # find command
+find là câu lệnh dùng để tìm các file và thư mục trong cây thư mục.  
+Cú pháp:  
+```
+find  [-H]  [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [ex‐pression]
+```
 ## find các file có đuôi .log
 `find / -type f -name "*.log"`
 ## find các folder có tên abc
@@ -228,27 +233,57 @@ chown user:group [file hoặc directory]
 ## find các file có tên abc và thực hiện phần quyền read only cho file
 `find / -type f -name "abc" -exec chmod 444 {} \;`
 # cp command
+cp là lệnh cơ bản trong linux, dùng để sao chép tệp và thư mục trong hệ thống  
+Cú pháp:  
+```
+Usage: cp [OPTION]... [-T] SOURCE DEST
+  or:  cp [OPTION]... SOURCE... DIRECTORY
+  or:  cp [OPTION]... -t DIRECTORY SOURCE...
+```
 ## cp file
 `cp src/file dest/`
 ## cp folder
 `cp src/ dest/`
 # mv command
+mv là lệnh dùng để di chuyển tệp tin và thư mục trong hệ thống.  
+Cú pháp:  
+```
+Usage: mv [OPTION]... [-T] SOURCE DEST
+  or:  mv [OPTION]... SOURCE... DIRECTORY
+  or:  mv [OPTION]... -t DIRECTORY SOURCE...
+```
 # mv file, folder
 `mv src/file dest/`  
 `mv src/ dest/`
 # cut command
+Lệnh cut được dùng để in ra màn hình một phần của dòng từ trong file được đưa vào câu lệnh.  
+Cú pháp:  
+```
+Usage: cut OPTION... [FILE]...
+
+```
 ## cut kí tự thứ <n> trong string
 `cut -c <n> filedemo`
 ## cut từ kí tự thứ <n> trở về sau
 `cut -c <n>- filedemo`
 ## cut từ kí tự thứ <n> trở về trước
 `cut -c -<n> filedemo`
-# dig comman
+# dig command
+Dig là câu lệnh dùng để tra cứu thông tin Domain Name Server (DNS) về một máy chủ từ xa cụ thể.  
+Cú pháp:  
+```
+Usage:  dig [@global-server] [domain] [q-type] [q-class] {q-opt}
+            {global-d-opt} host [@local-server] {local-d-opt}
+            [ host [@local-server] {local-d-opt} [...]]
+```
 ## Dùng Dig command để kiểm tra resolv record A, MX, NS
 `dig A vietnix.vn MX vietnix.vn NS vietnix.vn`
 ## Dùng Dig command để kiểm tra resolv record A, MX, NS với custom DNS
 `dig @CustomDNS A vietnix.vn MX vietnix.vn NS vietnix.vn`
 # tar/zip/unzip command
+tar dùng để giải nén hoặc nén file .tar, .tar.gz  
+zip dùng để nén file thành định dạng .zip  
+unzip dùng để giái nén file có định dạng .zip  
 ## - Nén/Giải nén file tar.gz - Nén/Giải nén file .zip
 Nén với tar: `tar -cvf file.tar filesrc`  
 Nén với gunzip: `tar -cvzf file.tar.gz filesrc`  
