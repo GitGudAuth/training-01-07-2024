@@ -34,3 +34,24 @@ CLI : v-*
 | STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | Có CLI | Không | Có | Có | Có |
+| 2 | Giới hạn users/domains | Theo gói | 1 | Nhiều users/domains | Nhiều users/domains |
+| 3 | Webpanel Miễn phí | Không | Miễn phí/Có phí | Miễn phí/Có phí | Miễn phí/Có phí |
+| 4 | Webpanel mặc định | Apache | Apache/Nginx | OpenLiteSpeed | Apache/Nginx |
+| 5 | Hỗ trợ SSL | Có | Có | Có | Có - không ổn định |
+| 6 | File manager | Có | Có | Có | Có |
+| 7 | Hỗ trợ FTP | Có | Có | Có | Có |
+| 8 | Hỗ trọ PHPMyAdmin | Có | Có | Có | Có |
+| 9 | DNS server | Có | Có | Có | Có |
+| 10 | Email server | Có | Không | Có | Có
+| 11 | Backup - Restore | Thủ công | Thủ công | Thủ công | Có predefined - có thể custom |
+| 12 | Hỗ trợ docker | Không | Có | Có | Không |
+| 13 | Hỗ trợ multi PHP | Có - build thêm | Có - build thêm | Có - mặc định | Có - build thêm |
+| 14 | Reseller | Có | Không | Có | Không |
+| 15 | Hỗ trợ NodeJS/Python | Có trong pro pack | Có | Không | Không
+| 16 | Thao tác cài đặt, sửa đổi gói/plugins | Dễ | Dễ | Khó | Khó |
+| 17 | Firewall CSF/LFD | Firewall có GUI | Cơ bản | Có | Có |
+| 18 | Terminal in GUI | Không | Có | Không | Không
+| 19 | Hỗ trợ packages - Chia gói Hosting | Có | Không | Có | Có |
+| 20 | Hỗ trợ chuyển qua sử dụng LiteSpeed | Có | Chỉ OpenLiteSpeed | Có | Không
+| 21 | Các chức năng trả phí nâng cao | Theo gói | Mua plugin | Mua plugin | Mua plugin |
+| 22 | Hỗ trợ cấu hình qua API | Có | Có | Có | Chỉ có Github |
