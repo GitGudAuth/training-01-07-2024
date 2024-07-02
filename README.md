@@ -44,7 +44,8 @@ total 12
 -rw------- 1 tpaityubun tpaityubun 1704 Jul  1 09:57 tech.training.vietnix.tech.key
 ```     
 ### Kiểm tra lại file .csr  
-```:~$ openssl req -text -noout -verify -in tech.training.vietnix.tech.csr  
+```
+:~$ openssl req -text -noout -verify -in tech.training.vietnix.tech.csr  
 Certificate request self-signature verify OK  
 Certificate Request:  
     Data:  
@@ -110,7 +111,8 @@ Cách tạo file PFX:
 - Đầu tiên chuyển đổi 2 file .csr và .key sang .crt : `openssl x509 -req -in tech.training.vietnix.tech.csr -signkey tech.training.vietnix.tech.key -out tech.training.vietnix.tech.crt`
 - Chuyển file crt sang pfx: `openssl pkcs12 -export -out tech.training.vietnix.tech.pfx -inkey tech.training.vietnix.tech.key -in tech.training.vietnix.tech.crt`
 - Hoặc chuyển file .pem sang pfx:
-```openssl pkcs12 -export -out tech.training.vietnix.tech.pfx -inkey tech.training.vietnix.tech.key -in tech.training.vietnix.tech.pem  
+```
+openssl pkcs12 -export -out tech.training.vietnix.tech.pfx -inkey tech.training.vietnix.tech.key -in tech.training.vietnix.tech.pem  
 Enter Export Password:
 Verifying - Enter Export Password:
 ```
