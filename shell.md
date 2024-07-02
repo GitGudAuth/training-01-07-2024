@@ -60,10 +60,12 @@ Cú pháp:
 ## cat dòng thứ <n> trong file
 `cat -n file`
 ## cat nhiều dòng vào 1 file bằng EOF
-<pre>cat <<EOF  
+```
+cat <<EOF  
 dòng 1  
 dòng 2  
-EOF </pre>
+EOF
+```
 # echo command
 ## Dùng echo để chèn thêm 1 dòng vào cuối file
 `echo "dong moi" >> file`  
