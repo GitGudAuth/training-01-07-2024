@@ -38,7 +38,7 @@ CLI : v-*
 | 3 | Webpanel Miễn phí | Không | Miễn phí/Có phí | Miễn phí/Có phí | Miễn phí |
 | 4 | Webpanel mặc định | Apache | Apache/Nginx | OpenLiteSpeed | Apache/Nginx |
 | 5 | Hỗ trợ SSL | Có | Có | Có | Có - không ổn định |
-| 6 | File manager | Có | Có | Có | Có |
+| 6 | File manager | Có | Có | Có | Không - phải active thủ công |
 | 7 | Hỗ trợ FTP | Có | Có | Có | Có |
 | 8 | Hỗ trọ PHPMyAdmin | Có | Có | Có | Có |
 | 9 | DNS server | Có | Có | Có | Có |
@@ -52,7 +52,7 @@ CLI : v-*
 | 17 | Firewall CSF/LFD | Firewall có GUI | Cơ bản | Không | Không |
 | 18 | Terminal in GUI | Không | Có | Không | Không
 | 19 | Hỗ trợ packages - Chia gói Hosting | Có | Không | Có | Có |
-| 20 | Hỗ trợ chuyển qua sử dụng LiteSpeed | Có | Chỉ OpenLiteSpeed | Có | Không
+| 20 | Hỗ trợ chuyển qua sử dụng LiteSpeed | Có | Không - Chỉ OpenLiteSpeed | Có | Không
 | 21 | Các chức năng trả phí nâng cao | Theo gói | Mua plugin | Mua plugin | Mua plugin |
 | 22 | Hỗ trợ cấu hình qua API | Có | Có | Có | Chỉ có Github |
 
