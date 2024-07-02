@@ -347,8 +347,10 @@ id: phần trăm cpu đang nhàn rỗi
 wa: phần trăm cpu đang chờ các I/O  
 hi: phần trăm cpu chờ gián đoạn phần cứng  
 si: phần trăm cpu chờ gián đọan phần mềm  
-st: phần trăm cpu ảo đợi cpu giải quyết các tiến trình  
-# free command
+st: phần trăm cpu ảo đợi cpu giải quyết các tiến trình
+zombie process:   
+sleeping process:   
+# free command 
 ## Giải thích ram used, free, shared, buff/cache, free
 used: số lượng bộ nhớ đang được sử dụng      
 free: số lượng bộ nhớ còn trống    
