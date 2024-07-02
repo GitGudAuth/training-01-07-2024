@@ -59,26 +59,26 @@ CLI : v-*
 ## Test 
 | STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
 | :---: | :--- | :---: | :---: | :---: | :---: |
-| 1 | Có CLI | Không | Có | Có | Có |
-| 2 | Giới hạn users/domains | Theo gói | 1 | Nhiều | Nhiều |
-| 3 | Webpanel Miễn phí | Không | Miễn phí/Có phí | Miễn phí/Có phí | Miễn phí |
-| 4 | Webpanel mặc định | Apache | Apache/Nginx | OpenLiteSpeed | Apache/Nginx |
-| 5 | Hỗ trợ SSL | Có | Có | Có | Có - không ổn định |
-| 6 | File manager | Có | Có | Có | Không - tự active |
-| 7 | Hỗ trợ FTP | Có | Có | Có | Có |
-| 8 | Hỗ trọ PHPMyAdmin | Có | Có | Có | Có |
-| 9 | DNS server | Có | Có | Có | Có |
-| 10 | Email server | Có | Không | Có | Có |
-| 11 | Backup - Restore | Thủ công | Thủ công | Thủ công | Có predefined - Có thể custom |
-| 12 | Hỗ trợ docker | Không | Có | Có | Khong |
-| 13 | Hỗ trợ multi PHP | Thủ công | Thủ công | Mặc định | Thủ công |
-| 14 | Reseller | Có | Không | Có | Không |
-| 15 | Hỗ trợ NodeJS/Python | Theo gói | Có | Không | Không |
-| 16 | Thao tác cài đặt, sửa đổi gói/plugins | Dễ | Dễ | Khó | Khó |
-| 17 | Firewall CSF/LFD | Có Gui | Có cơ bản | Không | Không |
-| 18 | Terminal in GUI | Không | Có | Không | Không |
-| 19 | Hỗ trợ packages - Chia gói Hosting | Có | Không | Có | Có |
-| 20 | Hỗ trợ chuyển qua sử dụng LiteSpeed | Có | Chỉ có OpenLiteSpeed | Có | Không |
-| 21 | Các chức năng trả phí nâng cao | bán gói | Plugin | Plugin | Plugin |
-| 22 | Hỗ trợ cấu hình qua API | Có | Có | Có | Github |
+| 1 | Có CLI |  |  |  |  |
+| 2 | Giới hạn users/domains |  |  |  |  |
+| 3 | Webpanel Miễn phí |  |  |  |  |
+| 4 | Webpanel mặc định |  |  |  |  |
+| 5 | Hỗ trợ SSL |  |  |  |  |
+| 6 | File manager |  |  |  |  |
+| 7 | Hỗ trợ FTP |  |  |  |  |
+| 8 | Hỗ trọ PHPMyAdmin |  |  |  |  |
+| 9 | DNS server |  |  |  |  |
+| 10 | Email server |  |  |  |  |
+| 11 | Backup - Restore |  |  |  |  |
+| 12 | Hỗ trợ docker |  |  |  |  |
+| 13 | Hỗ trợ multi PHP |  |  |  |  |
+| 14 | Reseller |  |  |  |  |
+| 15 | Hỗ trợ NodeJS/Python |  |  |  |  |
+| 16 | Thao tác cài đặt, sửa đổi gói/plugins |  |  |  |  |
+| 17 | Firewall CSF/LFD |  |  |  |  |
+| 18 | Terminal in GUI |  |  |  |  |
+| 19 | Hỗ trợ packages - Chia gói Hosting |  |  |  |  |
+| 20 | Hỗ trợ chuyển qua sử dụng LiteSpeed |  |  |  |  |
+| 21 | Các chức năng trả phí nâng cao |  |  |  |  |
+| 22 | Hỗ trợ cấu hình qua API |  |  |  |  |
 
