@@ -28,23 +28,23 @@ usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
        ssh [-Q query_option]
 ```
 ## Dùng password
-```ssh [username]@[ip]```
+```ssh [username]@[ip]```  
 Sau đó nhập password của user
 ## Dùng key
-```ssh -i [đường đẫn đến key]/private-key [username]@[ip]```
+```ssh -i [đường đẫn đến key]/private-key [username]@[ip]```  
 ## Dùng port custom
-```ssh -p [port] [username]@[ip]```
+```ssh -p [port] [username]@[ip]```  
 ## scp command
-SCP (Secure Copy) là giao thức dùng để truyền tải file an toan giữa các máy tính.  
-Cú pháp: 
-```scp [options] [source] [destination]```
-## scp 1 file
-```scp [đường dẫn đến file]/file remote@ip:[đường dẫn đích đến]```
-## scp 1 folder
-```scp [đường dẫn đến thư mục]/[thư mục] remote@ip:[đường dẫn đích đến]```
-# rsync command
-Rsync là một công cụ command line rất nhanh và linh hoạt, được dùng để đồng bộ hoá file và thư mục giữa hai vị trí khác nhau.   
+SCP (Secure Copy) là giao thức dùng để truyền tải file an toan giữa các máy tính.   
 Cú pháp:  
+```scp [options] [source] [destination]```  
+## scp 1 file
+```scp [đường dẫn đến file]/file remote@ip:[đường dẫn đích đến]```  
+## scp 1 folder
+```scp [đường dẫn đến thư mục]/[thư mục] remote@ip:[đường dẫn đích đến]```   
+# rsync command
+Rsync là một công cụ command line rất nhanh và linh hoạt, được dùng để đồng bộ hoá file và thư mục giữa hai vị trí khác nhau.     
+Cú pháp:   
 ```
 Usage: rsync [OPTION]... SRC [SRC]... DEST
   or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
@@ -55,11 +55,11 @@ Usage: rsync [OPTION]... SRC [SRC]... DEST
   or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 ```
 ## rsync file
-```rsync -a file-old file-new```
+```rsync -a file-old file-new```  
 ## rsync folder
-```rsync -a source/ dest/```
+```rsync -a source/ dest/```  
 ## rsync increamental
-```rsync -aAXPzv folder1 folder2```
+```rsync -aAXPzv folder1 folder2```  
 # cat command
 CAT (concatenate) là câu lệnh cơ bản trong linux, dùng để hiển thị nội đụng của file, nối nội dung các file với nhau,...
 Cú pháp:  
@@ -85,14 +85,19 @@ Cú pháp:
 echo [OPTIONS] [ARGUMENTS]
 ```
 ## Dùng echo để chèn thêm 1 dòng vào cuối file
-```echo "dong moi" >> file``` 
+```echo "dong moi" >> file```  
 ## Dùng echo để overwirte nội dung của file
-```echo "overwrite" > file```
+```echo "overwrite" > file```  
 # tail/head command
 tail: In ra 10 dòng cuối ở file  
 head: In ra 10 dòng đầu tiên ở file
+Cú pháp:  
+```
+tail [OPTIONS] [FILE]
+head [OPTIONS] [FILE]
+```
 # tail và tailf
-tailf giống như tail -f : xem 10 dòng cuối ở file và cập nhật ở thời gian thực
+tailf giống như tail -f : xem 10 dòng cuối ở file và cập nhật ở thời gian thực  
 # sed command
 sed (Stream Editor) được sử dụng để tìm, thay thế, xóa, thêm, trích xuất và thao tác với dữ liệu văn bản một cách hiệu quả.  
 cú pháp:  
@@ -122,6 +127,13 @@ Bước nhảy 1 ra 192.168.0.1 (gatewate)
 Bước nhảy 6 - 10 ra gateway bên vnpt   
 Bước nhảy 11 đến Website vietnix.vn  
 # netstat command
+netstat dùng dể thực hiện tra cứu, thống kê thông tin về tình trạng kết nối mạng, như thông tin về router, thông tin các cổng và thông tin các dịch vụ chạy trên cổng, IP ,...  
+Cú pháp:  
+```
+usage: netstat [-vWeenNcCF] [<Af>] -r         netstat {-V|--version|-h|--help}
+       netstat [-vWnNcaeol] [<Socket> ...]
+       netstat { [-vWeenNac] -i | [-cnNe] -M | -s [-6tuw] }
+```
 ## hiển thị các socket đang listen
 `netstat -l`
 ## don't resolve hostname
@@ -136,6 +148,12 @@ Bước nhảy 11 đến Website vietnix.vn
 `netstat -u`
 
 # sort command
+Lệnh sort giúp người dùng sắp xếp nội dung của tệp văn bản theo một thứ tự nhất định. Lệnh này có thể sắp xếp một tệp văn bản theo thứ tự bảng chữ cái, số, theo cột và hơn thế nữa, theo thứ tự bình thường hoặc ngược lại.     
+Cú pháp:  
+```
+       sort [OPTION]... [FILE]...
+       sort [OPTION]... --files0-from=F
+```
 ## sort theo thứ tự tăng dần
 `sort`
 ## sort theo thứ tự giảm dần
@@ -143,16 +161,47 @@ Bước nhảy 11 đến Website vietnix.vn
 ## sort theo column
 `sort -k`
 # uniq command
+uniq là lệnh dòng dể báo cáo số dòng lập lại trong một file
+Cú pháp:
+```
+       uniq [OPTION]... [INPUT [OUTPUT]]
+```
 ## lọc ra các dòng lặp lại trong một file
 `uniq file`
 ## lọc ra các dòng lặp lại trong file và đếm số lượng các dòng lặp lại
 `uniq -c file`
 # wc command
+wc là câu lệnh để đếm số lượng câu, chữ, dòng trong một file, hoặc có thể dùng để tìm số lượng thư mục trong một cây thư mục.   
+Cú pháp:
+```
+Usage: wc [OPTION]... [FILE]...
+  or:  wc [OPTION]... --files0-from=F
+
+```
 ## Đếm số dòng trong file
 `wc -l file`
 ## Đếm số kí tự trong file
 `wc -m file`
 # chmod, chown, chattr command
+chmod là lệnh dùng để thay đổi quyền trên thư mục hoặc tệp tin  
+Cú pháp :  
+```
+Usage: chmod [OPTION]... MODE[,MODE]... FILE...
+  or:  chmod [OPTION]... OCTAL-MODE FILE...
+  or:  chmod [OPTION]... --reference=RFILE FILE...
+
+```
+chown là lệnh dùng dể thay đổi chủ sỡ hữu file, hay group sở hữu file  
+Cú pháp:  
+```
+Usage: chown [OPTION]... [OWNER][:[GROUP]] FILE...
+  or:  chown [OPTION]... --reference=RFILE FILE...
+```
+chattr là lệnh dùng để thay đổi tính chất của file, thay đổi sticky bit  
+Cú pháp:  
+```
+Usage: chattr [-RVf] [-+=aAcCdDeijPsStTuFx] [-p project] [-v version] files..
+```
 ## Phân quyền bằng số, phân quyền bằng chữ
 1 = execute = x
 2 = write = w
