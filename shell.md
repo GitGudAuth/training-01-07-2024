@@ -39,6 +39,15 @@ Cú pháp:
 ## scp 1 folder
 `scp [đường dẫn đến thư mục]/[thư mục] remote@ip:[đường dẫn đích đến]`
 # rsync command
+Rsync là một công cụ command line rất nhanh và linh hoạt, được dùng để đồng bộ hoá file và thư mục giữa hai vị trí khác nhau.   
+Cú pháp:  
+<pre>Usage: rsync [OPTION]... SRC [SRC]... DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST:DEST
+  or   rsync [OPTION]... SRC [SRC]... [USER@]HOST::DEST
+  or   rsync [OPTION]... SRC [SRC]... rsync://[USER@]HOST[:PORT]/DEST
+  or   rsync [OPTION]... [USER@]HOST:SRC [DEST]
+  or   rsync [OPTION]... [USER@]HOST::SRC [DEST]
+  or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]</pre>
 ## rsync file
 `rsync -av source/file dest/`
 ## rsync folder
