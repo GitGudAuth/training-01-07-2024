@@ -190,7 +190,6 @@ Cú pháp :
 Usage: chmod [OPTION]... MODE[,MODE]... FILE...
   or:  chmod [OPTION]... OCTAL-MODE FILE...
   or:  chmod [OPTION]... --reference=RFILE FILE...
-
 ```
 chown là lệnh dùng dể thay đổi chủ sỡ hữu file, hay group sở hữu file  
 Cú pháp:  
@@ -244,9 +243,9 @@ Usage: cp [OPTION]... [-T] SOURCE DEST
   or:  cp [OPTION]... -t DIRECTORY SOURCE...
 ```
 ## cp file
-```cp src/file dest/`
+```cp src/file dest/```
 ## cp folder
-`cp src/ dest/`
+```cp src/ dest/```
 # mv command
 mv là lệnh dùng để di chuyển tệp tin và thư mục trong hệ thống.  
 Cú pháp:  
@@ -290,12 +289,12 @@ tar dùng để giải nén hoặc nén file .tar, .tar.gz
 zip dùng để nén file thành định dạng .zip  
 unzip dùng để giái nén file có định dạng .zip  
 ## - Nén/Giải nén file tar.gz - Nén/Giải nén file .zip
-Nén với tar: `tar -cvf file.tar filesrc`  
-Nén với gunzip: `tar -cvzf file.tar.gz filesrc`  
-Nén với zip: `zip -rv file.zip filedemo`  
-Giải nén tar: `tar -xvf file.tar`  
-Giải nén gunzip: `tar -xvf file.tar.gz`  
-Giải nén unzip: `unzip file.zip`  
+Nén với tar: ```tar -cvf file.tar filesrc```  
+Nén với gunzip: ```tar -cvzf file.tar.gz filesrc```  
+Nén với zip: ```zip -rv file.zip filedemo```  
+Giải nén tar: ```tar -xvf file.tar```  
+Giải nén gunzip: ```tar -xvf file.tar.gz```  
+Giải nén unzip: ```unzip file.zip```  
 
 # mount/umount command
 
