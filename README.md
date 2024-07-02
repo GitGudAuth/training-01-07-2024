@@ -44,55 +44,56 @@ total 12
 -rw------- 1 tpaityubun tpaityubun 1704 Jul  1 09:57 tech.training.vietnix.tech.key
 ```     
 ### Kiểm tra lại file .csr  
-`:~$ openssl req -text -noout -verify -in tech.training.vietnix.tech.csr`  
-`Certificate request self-signature verify OK`  
-`Certificate Request:`  
-`    Data:`  
-`        Version: 1 (0x0)`   
-`        Subject: C = VN, ST = Some-State, L = Ho Chi Minh city, O = Vietnix, OU = Tech, CN = Training`  
-`        Subject Public Key Info:`  
-`           Public Key Algorithm: rsaEncryption`  
-`                Public-Key: (2048 bit)`  
-`                Modulus:`  
-`                    00:a9:08:a0:c4:ab:25:d1:fe:af:ab:35:05:33:58:`  
-`                    69:2c:e5:03:ac:9d:d2:e2:d6:23:f6:1e:a5:28:41:`  
-`                    ea:d9:2c:09:36:b9:69:a1:46:c0:f7:ae:4b:a0:8e:`  
-`                    2b:f0:2f:2e:c8:5b:89:ad:6d:18:3c:9b:f7:75:9d:`  
-`                    dc:66:63:f9:88:98:de:95:61:5f:81:43:c9:06:c1:`  
-`                    5f:60:51:4a:56:5d:ad:10:d4:0c:42:23:d1:cb:c0:`  
-`                    eb:24:07:89:3c:05:5e:77:00:41:97:08:a5:3b:e3:`  
-`                    4b:70:d4:d3:d4:2c:e1:1e:ad:a0:bf:9f:5b:4d:97:`  
-`                    7a:6e:a5:de:72:dd:a3:de:2e:7c:c9:1c:ea:7f:20:`  
-`                    af:00:95:c5:20:5d:03:3c:3b:c5:f7:95:47:3d:14:`  
-`                    0e:03:77:ee:ef:e6:c5:15:9c:3a:dc:7a:dc:ba:cd:`  
-`                    19:37:ee:74:cf:23:0d:6c:55:e2:79:c1:4e:ec:1b:`   
-`                    12:43:c5:8e:08:b6:73:bd:79:bc:dd:4d:ae:78:f5:`  
-`                    9b:d4:95:ef:05:90:32:5b:ec:3d:36:18:c7:12:3c:`  
-`                    93:2b:8e:d7:f7:3f:40:7b:8f:29:4d:a2:16:4a:8a:`  
-`                    92:66:16:c4:f3:5d:d1:4a:d0:c8:3c:ce:4f:62:a4:`  
-`                    e2:2f:29:dc:10:91:f9:d9:23:d6:4e:c8:f5:eb:8c:`  
-`                    be:6b`  
-`                Exponent: 65537 (0x10001)`  
-`        Attributes:`  
-`            (none)`  
-`            Requested Extensions:`  
-`    Signature Algorithm: sha256WithRSAEncryption`  
-`    Signature Value:`  
-`        68:9d:3b:45:b3:20:8b:a1:98:ad:ce:d1:56:13:40:28:3e:c2:`  
-`        e1:43:b5:0b:22:de:56:ad:59:da:e9:1f:4c:15:f5:35:a6:1e:`  
-`        0d:98:2d:19:e1:1e:dc:11:70:f3:41:5e:ca:80:80:5a:05:ab:`  
-`        90:44:7f:ba:da:cc:2d:ac:07:d8:ad:1b:71:47:74:c0:ef:2f:`  
-`        d2:18:8a:13:a6:26:18:00:85:24:33:ae:27:2b:73:d5:60:19:`  
-`        73:b2:32:92:03:64:20:7f:a9:d3:41:9e:c8:d1:8a:ad:e8:1b:`  
-`        5e:29:c0:bb:81:c8:3c:86:75:da:12:0e:7b:50:68:fa:9a:bc:`  
-`        bb:ed:a0:56:4c:30:6d:76:52:4d:22:bb:f3:e1:59:5e:e2:09:`  
-`        c1:37:78:f6:a1:c9:7b:ef:a3:03:38:4a:35:31:7a:ae:a8:6f:`  
-`        f8:66:d1:c1:ba:a0:c0:74:90:46:ee:a9:8d:30:cd:ec:32:d1:`  
-`        58:f3:6b:e4:5b:82:80:f1:fd:a9:45:dc:5b:71:a3:63:d5:af:`  
-`        4c:30:40:dd:9b:3b:df:28:2b:bd:a7:7d:0d:5e:72:73:5f:73:`  
-`        ec:f1:b4:69:03:24:ee:7b:5a:14:74:0d:9e:c3:c0:4f:8a:1b:`  
-`        05:f3:cd:0b:03:62:2b:c0:c2:97:3f:d5:33:6a:ec:d1:12:85:`  
-`        3a:04:ef:ea`  
+```:~$ openssl req -text -noout -verify -in tech.training.vietnix.tech.csr  
+Certificate request self-signature verify OK  
+Certificate Request:  
+    Data:  
+        Version: 1 (0x0)   
+        Subject: C = VN, ST = Some-State, L = Ho Chi Minh city, O = Vietnix, OU = Tech, CN = Training  
+        Subject Public Key Info:  
+           Public Key Algorithm: rsaEncryption  
+                Public-Key: (2048 bit)  
+                Modulus:  
+                    00:a9:08:a0:c4:ab:25:d1:fe:af:ab:35:05:33:58:  
+                    69:2c:e5:03:ac:9d:d2:e2:d6:23:f6:1e:a5:28:41:  
+                    ea:d9:2c:09:36:b9:69:a1:46:c0:f7:ae:4b:a0:8e:  
+                    2b:f0:2f:2e:c8:5b:89:ad:6d:18:3c:9b:f7:75:9d:  
+                    dc:66:63:f9:88:98:de:95:61:5f:81:43:c9:06:c1:  
+                    5f:60:51:4a:56:5d:ad:10:d4:0c:42:23:d1:cb:c0:  
+                    eb:24:07:89:3c:05:5e:77:00:41:97:08:a5:3b:e3:  
+                    4b:70:d4:d3:d4:2c:e1:1e:ad:a0:bf:9f:5b:4d:97:  
+                    7a:6e:a5:de:72:dd:a3:de:2e:7c:c9:1c:ea:7f:20:  
+                    af:00:95:c5:20:5d:03:3c:3b:c5:f7:95:47:3d:14:  
+                    0e:03:77:ee:ef:e6:c5:15:9c:3a:dc:7a:dc:ba:cd:  
+                    19:37:ee:74:cf:23:0d:6c:55:e2:79:c1:4e:ec:1b:   
+                    12:43:c5:8e:08:b6:73:bd:79:bc:dd:4d:ae:78:f5:  
+                    9b:d4:95:ef:05:90:32:5b:ec:3d:36:18:c7:12:3c:  
+                    93:2b:8e:d7:f7:3f:40:7b:8f:29:4d:a2:16:4a:8a:  
+                    92:66:16:c4:f3:5d:d1:4a:d0:c8:3c:ce:4f:62:a4:  
+                    e2:2f:29:dc:10:91:f9:d9:23:d6:4e:c8:f5:eb:8c:  
+                    be:6b  
+                Exponent: 65537 (0x10001)  
+        Attributes:  
+            (none)  
+            Requested Extensions:  
+    Signature Algorithm: sha256WithRSAEncryption  
+    Signature Value:  
+        68:9d:3b:45:b3:20:8b:a1:98:ad:ce:d1:56:13:40:28:3e:c2:  
+        e1:43:b5:0b:22:de:56:ad:59:da:e9:1f:4c:15:f5:35:a6:1e:  
+        0d:98:2d:19:e1:1e:dc:11:70:f3:41:5e:ca:80:80:5a:05:ab:  
+        90:44:7f:ba:da:cc:2d:ac:07:d8:ad:1b:71:47:74:c0:ef:2f:  
+        d2:18:8a:13:a6:26:18:00:85:24:33:ae:27:2b:73:d5:60:19:  
+        73:b2:32:92:03:64:20:7f:a9:d3:41:9e:c8:d1:8a:ad:e8:1b:  
+        5e:29:c0:bb:81:c8:3c:86:75:da:12:0e:7b:50:68:fa:9a:bc:  
+        bb:ed:a0:56:4c:30:6d:76:52:4d:22:bb:f3:e1:59:5e:e2:09:  
+        c1:37:78:f6:a1:c9:7b:ef:a3:03:38:4a:35:31:7a:ae:a8:6f:  
+        f8:66:d1:c1:ba:a0:c0:74:90:46:ee:a9:8d:30:cd:ec:32:d1:  
+        58:f3:6b:e4:5b:82:80:f1:fd:a9:45:dc:5b:71:a3:63:d5:af:  
+        4c:30:40:dd:9b:3b:df:28:2b:bd:a7:7d:0d:5e:72:73:5f:73:  
+        ec:f1:b4:69:03:24:ee:7b:5a:14:74:0d:9e:c3:c0:4f:8a:1b:  
+        05:f3:cd:0b:03:62:2b:c0:c2:97:3f:d5:33:6a:ec:d1:12:85:  
+        3a:04:ef:ea
+```  
 ## Pem file là gì ?
 PEM (Privacy Enhanced Mail) là tệp chứng chỉ bảo mật được sử dụng để thiết lập kênh liên lạc an toàn giữa máy chủ web và trình duyệt. Nó được mã hóa Base64 và có thể chứa khóa riêng, chứng chỉ máy chủ và/hoặc kết hợp các chứng chỉ khác. Các tệp PEM tương tự như các tệp chứng chỉ .der về cách sử dụng nhưng được lưu trữ dưới dạng văn bản được mã hóa Base64 thay vì dữ liệu nhị phân. Các định dạng tệp chứng chỉ tương tự khác bao gồm các tệp .cer và .crt.  
 Tạo file .pem bằng file .csr và .key  
