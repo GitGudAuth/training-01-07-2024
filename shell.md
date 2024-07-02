@@ -10,8 +10,9 @@ len=28 ip=103.90.224.90 ttl=53 id=4625 icmp_seq=4 rtt=7.0 ms
 len=28 ip=103.90.224.90 ttl=53 id=4661 icmp_seq=5 rtt=6.6 ms
 ```  
 ## ttl= là gì
-ttl là time to live, là thời gian sống của một gói tin
 ## time= là gì
+ttl là time to live, là thời gian sống của một gói tin  
+time là thời gian gói tin trả về, tính bằng ms, thời gian trả về càng thấp mạng càng nhanh.  
 ttl = 53  
 round-trip min/avg/max = 5.2/6.9/9.0 ms  
 # ssh command
