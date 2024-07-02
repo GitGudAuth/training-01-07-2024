@@ -11,6 +11,7 @@ Có 5 cách chứng thực SSL
 ## CSR file dùng làm gì trong quá trình tạo SSL
 CSR là từ viết tắt của cụm từ Certificate Signing Request là một văn bản chứa thông tin của chủ sở hữu tên miền được mã hóa từ máy chủ. Bạn cần phải tạo CSR trước khi gửi yêu cầu chứng thực tới nhà cung cấp CA (Certificate Authority) để tạo ra một chứng thực SSL.
 ## Sử dụng OpenSSL để gen file CSR sau đó request SSL cho domain tech.training.vietnix.tech  
+```
 openssl req -new -newkey rsa:2048 -nodes -keyout tech.training.vietnix.tech.key -out tech.training.vietnix.tech.csr  
 .+...+..+......+..........+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*...+......+...+....+...+........+....+......+.....+.+.....+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.......+.............+...+............+..+.+..+.........+..........+...+........+...+......+.+...+......+..............+.+........+.......+...+..+......+.......+..+.............+......+.....+.+........+......................+.........+..............+......+....+..+......+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ..........+...+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.....+......+....+..............+.+..+............+.+......+......+.....+....+...+.....+......+.+.........+..+...+....+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*.+...............+.........................+...+..+....+........+.....................+....+...+..+............+.+........+............+....+.........+...............+.........+..+...+.+......+...+...+..+......+....+..+.+..+......+.......+..+...+...+....+...+..+.............+........+......+......+.......+..+..................+.+..+....+......+...+......+........+.+......+...+.....+...+....+...+.................+.+..+...+...................+...........+....+...+......+............+.....+...+......+.........+.+.........+...............+..+....+........+................+.....+....+..+.........+.+.....+...+......+....+.....+............+.+...+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -34,12 +35,14 @@ Please enter the following 'extra' attributes
 to be sent with your certificate request
 A challenge password []:           
 An optional company name []:  
-  
+```  
 Output:
-`:~$ ls -l`  
-`total 12`   
-`-rw-rw-r-- 1 tpaityubun tpaityubun 1017 Jul  1 10:04 tech.training.vietnix.tech.csr`  
-`-rw------- 1 tpaityubun tpaityubun 1704 Jul  1 09:57 tech.training.vietnix.tech.key`     
+```
+:~$ ls -l 
+total 12   
+-rw-rw-r-- 1 tpaityubun tpaityubun 1017 Jul  1 10:04 tech.training.vietnix.tech.csr  
+-rw------- 1 tpaityubun tpaityubun 1704 Jul  1 09:57 tech.training.vietnix.tech.key
+```     
 ### Kiểm tra lại file .csr  
 `:~$ openssl req -text -noout -verify -in tech.training.vietnix.tech.csr`  
 `Certificate request self-signature verify OK`  
