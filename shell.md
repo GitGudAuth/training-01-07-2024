@@ -49,9 +49,9 @@ Cú pháp:
   or   rsync [OPTION]... [USER@]HOST::SRC [DEST]
   or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]</pre>
 ## rsync file
-`rsync -av source/file dest/`
+`rsync -a file-old file-new`
 ## rsync folder
-`rsync -av source/folder dest`
+`rsync -a source/ dest/`
 ## rsync increamental
 `rsync -av source/oldfolder remote:source/folder source/newfolder`
 # cat command
@@ -60,10 +60,10 @@ Cú pháp:
 ## cat dòng thứ <n> trong file
 `cat -n file`
 ## cat nhiều dòng vào 1 file bằng EOF
-`cat <<EOF`  
-`dòng 1`  
-`dòng 2`  
-`EOF`  
+<pre>cat <<EOF  
+dòng 1  
+dòng 2  
+EOF </pre>
 # echo command
 ## Dùng echo để chèn thêm 1 dòng vào cuối file
 `echo "dong moi" >> file`  
