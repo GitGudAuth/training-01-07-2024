@@ -8,23 +8,36 @@
 `len=28 ip=103.90.224.90 ttl=53 id=4625 icmp_seq=4 rtt=7.0 ms`  
 `len=28 ip=103.90.224.90 ttl=53 id=4661 icmp_seq=5 rtt=6.6 ms`  
 ## ttl= là gì
+ttl là time to live, là thời gian sống của một gói tin
 ## time= là gì
 ttl = 53  
 round-trip min/avg/max = 5.2/6.9/9.0 ms  
 # ssh command
+SSH (Secure Shell) là một giao thức mạng giúp người dùng truy cập an toàn vào một thiết bị qua một mạng không được bảo mật.
+Cú pháp:  
+<pre>usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
+           [-c cipher_spec] [-D [bind_address:]port] [-E log_file]
+           [-e escape_char] [-F configfile] [-I pkcs11] [-i identity_file]
+           [-J destination] [-L address] [-l login_name] [-m mac_spec]
+           [-O ctl_cmd] [-o option] [-P tag] [-p port] [-R address]
+           [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
+           destination [command [argument ...]]
+       ssh [-Q query_option]</pre>
 ## Dùng password
 `ssh [username]@[ip]`  
 Sau đó nhập password của user
 ## Dùng key
-`ssh -i [đường đẫn đến key] [username]@[ip]`
+`ssh -i [đường đẫn đến key]/private-key [username]@[ip]`
 ## Dùng port custom
 `ssh -p [port] [username]@[ip]`
 ## scp command
-`scp A@ip:[đường dẫn đến tệp] B@ip:[đường dẫn đích đến]`
+SCP (Secure Copy) là giao thức dùng để truyền tải file an toan giữa các máy tính.  
+Cú pháp: 
+`scp [options] [source] [destination]`
 ## scp 1 file
-`scp A@ip:[đường dẫn đến file]/file B@ip:[đường dẫn đích đến]`
+`scp [đường dẫn đến file]/file remote@ip:[đường dẫn đích đến]`
 ## scp 1 folder
-`scp A@ip:[đường dẫn đến thư mục]/[thư mục] B@ip:[đường dẫn đích đến]`
+`scp [đường dẫn đến thư mục]/[thư mục] remote@ip:[đường dẫn đích đến]`
 # rsync command
 ## rsync file
 `rsync -av source/file dest/`
