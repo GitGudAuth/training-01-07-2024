@@ -212,9 +212,11 @@ Usage: chattr [-RVf] [-+=aAcCdDeijPsStTuFx] [-p project] [-v version] files..
 "---" 3 gạch đầu tiên cho biết quyền thực thi của owner  
 "---" 3 gạch tiếp theo cho biết quyền thực thi của group  
 "---" 3 gạch cuối cho biết quyền thực thi của other  
-`chmod 777 filedemo (full quyền)`  
-`chmod g+w filedemo (chỉ cho group quyền write)`  
-`chmod u+x filedemo (cho quyền user/owner quyền execute file)`  
+```
+chmod 777 filedemo (full quyền)  
+chmod g+w filedemo (chỉ cho group quyền write)  
+chmod u+x filedemo (cho quyền user/owner quyền execute file)
+```  
 ## Đổi owner user/group
 chown user:group [file hoặc directory]
 ## Set Immutable Attribute
@@ -280,9 +282,9 @@ Usage:  dig [@global-server] [domain] [q-type] [q-class] {q-opt}
             [ host [@local-server] {local-d-opt} [...]]
 ```
 ## Dùng Dig command để kiểm tra resolv record A, MX, NS
-`dig A vietnix.vn MX vietnix.vn NS vietnix.vn`
+```dig A vietnix.vn MX vietnix.vn NS vietnix.vn```
 ## Dùng Dig command để kiểm tra resolv record A, MX, NS với custom DNS
-`dig @CustomDNS A vietnix.vn MX vietnix.vn NS vietnix.vn`
+```dig @CustomDNS A vietnix.vn MX vietnix.vn NS vietnix.vn```
 # tar/zip/unzip command
 tar dùng để giải nén hoặc nén file .tar, .tar.gz  
 zip dùng để nén file thành định dạng .zip  
@@ -335,7 +337,7 @@ kill -9 PID
 ```  
 # top command
 ## Kiểm tra tài nguyên cpu đang sử dụng của một vài process đang chạy
-```top```
+```top ```
 ## Giải thích về Load average, us, sy, ni, id, wa, hi, si, st, zombie process, sleeping process
 Load average : Thời gian load trung bình của cpu trong thời gian nhất định  
 us: phần trăm cpu dành để chạy tiến trình của user  
@@ -354,6 +356,6 @@ shared: số lượng bộ nhớ được sử dụng bỏi tmpfs
 buff/cache: số lượng bộ nhớ được sử dụng bởi kernel  
 # df command
 ## Xem dung lượng disk
-```df```
+```df ```
 ## Phân vùng / là gì
 Là gốc của cây thư mục filesystem, chứa toàn bộ các file và thư mục của hệ điều hành  
