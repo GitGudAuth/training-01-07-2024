@@ -145,7 +145,7 @@ https://host247.vietnix.vn/webmail
 ## Subdomain là gì?
 Subdomain là tên miền phụ của tên miền chính (Domain).
 Tên miền phụ có thể được sử dụng để tạo trang web mới mà không cần phải mua thêm tên miền mới.  
-Mối tên miền phụ có thể được quản lý riêng biệt và điều chỉnh độc lập, cho phép bạn có thể tùy chỉnh cấu hình, thiết lập quyền truy cập và theo dõi hiệu suất của từng phần riêng biệt của trang web
+Mối tên miền phụ có thể được quản lý riêng biệt và điều chỉnh độc lập, cho phép bạn có thể tùy chỉnh cấu hình, thiết lập quyền truy cập và theo dõi hiệu suất của từng phần riêng biệt của trang web  
 ## Virtual Hosts là gì?
 Virtual Host là một dạng lưu trữ mà bạn lưu được nhiều domain khác nhau trên cùng một máy chủ sever.   
 # Mail Server
@@ -157,7 +157,7 @@ MX Record được viết tắt của từ Mail Exchange Record, có nghĩa là 
 - Bản ghi PTR (Pointer Record) là một loại bản ghi trong hệ thống DNS được sử dụng để ánh xạ một địa chỉ IP (IPv4 hoặc IPv6) thành một tên miền. Bản ghi PTR hoạt động theo chiều ngược lại so với các bản ghi DNS thông thường: thay vì ánh xạ tên miền thành địa chỉ IP (như trong bản ghi A hoặc AAAA), nó ánh xạ địa chỉ IP thành tên miền.  
 # DNS
 ## DNS là gì ?
-DNS hay còn được gọi là Domain Name Server là hệ thống phân giải tên miền. DNS là hệ thống cho phép thiết lập tương ứng giữa địa chỉ IP và tên miền trên Internet.  
+DNS hay còn được gọi là Domain Name System là hệ thống phân giải tên miền. DNS là hệ thống cho phép thiết lập tương ứng giữa địa chỉ IP và tên miền trên Internet.  
 ## Các loại recored DNS
 - CNAME Record
 - TXT Record
