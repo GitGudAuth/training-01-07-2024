@@ -32,7 +32,7 @@ Cây thư mục nằm ở:
 CLI : v-*
 ## 5.So sánh 3 control panel
 | STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
-| :---: | :---: | :---: | :---: | :---: | :---: |
+| :---: | :--- | :---: | :---: | :---: | :---: |
 | 1 | Có CLI | Không | Có | Có | Có |
 | 2 | Giới hạn users/domains | Theo gói | 1 | Nhiều users/domains | Nhiều users/domains |
 | 3 | Webpanel Miễn phí | Không | Miễn phí/Có phí | Miễn phí/Có phí | Miễn phí |
@@ -58,7 +58,7 @@ CLI : v-*
 
 ## Test 
 | STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
-| :---: | :---: | :---: | :---: | :---: | :---: |
+| :---: | :--- | :---: | :---: | :---: | :---: |
 | 1 | Có CLI |  |  |  |  |
 | 2 | Giới hạn users/domains |  |  |  |  |
 | 3 | Webpanel Miễn phí |  |  |  |  |
