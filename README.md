@@ -39,8 +39,8 @@ Output:
 `:~$ ls -l`  
 `total 12`  
 `-rw-rw-r-- 1 tpaityubun tpaityubun 1017 Jul  1 10:04 tech.training.vietnix.tech.csr`  
-`-rw------- 1 tpaityubun tpaityubun 1704 Jul  1 09:57 tech.training.vietnix.tech.key`  
-Kiểm tra lại file .csr  
+`-rw------- 1 tpaityubun tpaityubun 1704 Jul  1 09:57 tech.training.vietnix.tech.key`   
+### Kiểm tra lại file .csr  
 `:~$ openssl req -text -noout -verify -in tech.training.vietnix.tech.csr`  
 `Certificate request self-signature verify OK`  
 `Certificate Request:`  
