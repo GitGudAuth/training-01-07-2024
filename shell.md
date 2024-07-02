@@ -264,7 +264,6 @@ Lệnh cut được dùng để in ra màn hình một phần của dòng từ t
 Cú pháp:  
 ```
 Usage: cut OPTION... [FILE]...
-
 ```
 ## cut kí tự thứ <n> trong string
 ```cut -c <n> filedemo```
