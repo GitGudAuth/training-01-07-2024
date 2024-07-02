@@ -437,7 +437,7 @@ kill -9 PID
 top
 ```
 ## Giải thích về Load average, us, sy, ni, id, wa, hi, si, st, zombie process, sleeping process
-Load average : Thời gian load trung bình của cpu trong thời gian nhất định  
+**Load average** : Thời gian load trung bình của cpu trong thời gian nhất định  
 **us**: phần trăm cpu dành để chạy tiến trình của user  
 **sy**: phần trăm cpu dành để chạy tiến trình của system  
 **ni**: phần trăm cpu dành để chạy các tiến trình không có độ ưu tiên cao  
