@@ -92,6 +92,10 @@ Output:
 `        3a:04:ef:ea`  
 ## Pem file là gì ?
 PEM (Privacy Enhanced Mail) là tệp chứng chỉ bảo mật được sử dụng để thiết lập kênh liên lạc an toàn giữa máy chủ web và trình duyệt. Nó được mã hóa Base64 và có thể chứa khóa riêng, chứng chỉ máy chủ và/hoặc kết hợp các chứng chỉ khác. Các tệp PEM tương tự như các tệp chứng chỉ .der về cách sử dụng nhưng được lưu trữ dưới dạng văn bản được mã hóa Base64 thay vì dữ liệu nhị phân. Các định dạng tệp chứng chỉ tương tự khác bao gồm các tệp .cer và .crt.  
+Tạo file .pem bằng file .csr và .key
+`openssl x509 -req -sha256 -days 365 -in tech.training.vietnix.tech.csr -signkey tech.training.vietnix.tech.key -out tech.training.vietnix.tech.pem`  
+`Certificate request self-signature ok`  
+`subject=C = VN, ST = Some-State, L = Ho Chi Minh city, O = Vietnix, OU = Tech, CN = Training`  
 ## Private key ssl là gì ?
 Là file mã hoá được sinh ra cùng lúc khi tạo CSR. Để đơn giản, hãy hình dung CRT là phần mã hoá công khai được trình duyệt sử dụng để truy cập đến website của bạn. Vậy khi dữ liệu đến được website sẽ cần chìa khoá để mở khoá thông tin được mã hoá ở CRT.  
 
