@@ -59,8 +59,14 @@ Usage: rsync [OPTION]... SRC [SRC]... DEST
 ## rsync folder
 `rsync -a source/ dest/`
 ## rsync increamental
-`rsync -av source/oldfolder remote:source/folder source/newfolder`
+`rsync -aAXPzv folder1 folder2`
 # cat command
+CAT (concatenate) là câu lệnh cơ bản trong linux, dùng để hiển thị nội đụng của file, nối nội dung các file với nhau,...
+Cú pháp:  
+```
+Usage: cat [OPTION]... [FILE]...
+Concatenate FILE(s) to standard output.
+```
 ## cat nội dung 1 file
 `cat file`
 ## cat dòng thứ <n> trong file
@@ -73,6 +79,11 @@ dòng 2
 EOF
 ```
 # echo command
+Echo là lệnh cơ bản trong linux, mục đích để hiển thị văn bản ra màn hình hoặc ghi đè vào tệp.  
+Cú pháp:  
+```
+echo [OPTIONS] [ARGUMENTS]
+```
 ## Dùng echo để chèn thêm 1 dòng vào cuối file
 `echo "dong moi" >> file`  
 ## Dùng echo để overwirte nội dung của file
@@ -83,6 +94,11 @@ head: In ra 10 dòng đầu tiên ở file
 # tail và tailf
 tailf giống như tail -f : xem 10 dòng cuối ở file và cập nhật ở thời gian thực
 # sed command
+sed (Stream Editor) được sử dụng để tìm, thay thế, xóa, thêm, trích xuất và thao tác với dữ liệu văn bản một cách hiệu quả.  
+cú pháp:  
+```
+Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
+```
 ## Dùng sed để find and replace một string trong file
 `sed -i 's\old\new\g' file`
 # traceroute/tracert command
