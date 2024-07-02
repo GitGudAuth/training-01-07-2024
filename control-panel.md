@@ -56,29 +56,3 @@ CLI : v-*
 | 21 | Các chức năng trả phí nâng cao | Theo gói | Mua plugin | Mua plugin | Mua plugin |
 | 22 | Hỗ trợ cấu hình qua API | Có | Có | Có | Chỉ có Github |
 
-## Test 
-| STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
-| :---: | :--- | :---: | :---: | :---: | :---: |
-| 1 | Có CLI |  |  |  |  |
-| 2 | Giới hạn users/domains |  |  |  |  |
-| 3 | Webpanel Miễn phí |  |  |  |  |
-| 4 | Webpanel mặc định |  |  |  |  |
-| 5 | Hỗ trợ SSL |  |  |  |  |
-| 6 | File manager |  |  |  |  |
-| 7 | Hỗ trợ FTP |  |  |  |  |
-| 8 | Hỗ trọ PHPMyAdmin |  |  |  |  |
-| 9 | DNS server |  |  |  |  |
-| 10 | Email server |  |  |  |  |
-| 11 | Backup - Restore |  |  |  |  |
-| 12 | Hỗ trợ docker |  |  |  |  |
-| 13 | Hỗ trợ multi PHP |  |  |  |  |
-| 14 | Reseller |  |  |  |  |
-| 15 | Hỗ trợ NodeJS/Python |  |  |  |  |
-| 16 | Thao tác cài đặt, sửa đổi gói/plugins |  |  |  |  |
-| 17 | Firewall CSF/LFD |  |  |  |  |
-| 18 | Terminal in GUI |  |  |  |  |
-| 19 | Hỗ trợ packages - Chia gói Hosting |  |  |  |  |
-| 20 | Hỗ trợ chuyển qua sử dụng LiteSpeed |  |  |  |  |
-| 21 | Các chức năng trả phí nâng cao |  |  |  |  |
-| 22 | Hỗ trợ cấu hình qua API |  |  |  |  |
-
