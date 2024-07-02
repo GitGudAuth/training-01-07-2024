@@ -254,8 +254,10 @@ Usage: mv [OPTION]... [-T] SOURCE DEST
   or:  mv [OPTION]... -t DIRECTORY SOURCE...
 ```
 # mv file, folder
-`mv src/file dest/`  
-`mv src/ dest/`
+```
+mv src/file dest/  
+mv src/ dest/
+```
 # cut command
 Lệnh cut được dùng để in ra màn hình một phần của dòng từ trong file được đưa vào câu lệnh.  
 Cú pháp:  
@@ -264,11 +266,11 @@ Usage: cut OPTION... [FILE]...
 
 ```
 ## cut kí tự thứ <n> trong string
-`cut -c <n> filedemo`
+```cut -c <n> filedemo```
 ## cut từ kí tự thứ <n> trở về sau
-`cut -c <n>- filedemo`
+```cut -c <n>- filedemo```
 ## cut từ kí tự thứ <n> trở về trước
-`cut -c -<n> filedemo`
+```cut -c -<n> filedemo```
 # dig command
 Dig là câu lệnh dùng để tra cứu thông tin Domain Name Server (DNS) về một máy chủ từ xa cụ thể.  
 Cú pháp:  
@@ -296,18 +298,18 @@ Giải nén unzip: `unzip file.zip`
 # mount/umount command
 
 ## - Add thêm một ổ cứng sdb ~ 5gb
-`fdisk /dev/sdb`  
+```fdisk /dev/sdb``` 
 n : tạo phân vùng mới    
 p : primary    
 1: phân vùng 1  
 +5G : thêm ổ cứng 5gb  
 w: save lại  
 ## - Kiểm tra được có bao nhiêu ổ cứng trên máy chủ
-`lsblk`  
+```lsblk```  
 ## - Mount ổ cứng vào /mnt/test
-`mount /dev/sdb /mnt/test`  
+```mount /dev/sdb /mnt/test```  
 ## - Umount /mnt/test
-`umount /mnt/test`  
+```umount /mnt/test```  
 # Symbolic Links, Hard Links command
 ## Định nghĩa Sym Link
 Liên kết mềm có thể xem như các shortcut trong Windows, tức là trỏ gián tiếp đến một file hoặc thư mục nào đó. Loại liên kết này có thể trỏ đến một file hay thư mục trên một filesystem hoặc phân vùng khác.  
@@ -318,20 +320,22 @@ Tạo Sym Link : `ln -s sourcefile symlinkfile`
 Tạo Hard Link : `ln sourcefile hardlinkfile`  
 # ls command
 ## Liệt kê danh sách file/thư mục
-`ls`
+```ls```
 ## Liệt kê danh sách file/thư mục và thuộc tính
-`ls -l`
+```ls -l```
 ## Show file ẩn
-`ls -a`
+```ls -a```
 # ps command
 ## show tiến trình
-`ps aux`
+```ps aux```
 ## kill tiến trình
-`pkill tientrinh`  
-`kill -9 PID`  
+```
+pkill tientrinh  
+kill -9 PID
+```  
 # top command
 ## Kiểm tra tài nguyên cpu đang sử dụng của một vài process đang chạy
-`top`
+```top```
 ## Giải thích về Load average, us, sy, ni, id, wa, hi, si, st, zombie process, sleeping process
 Load average : Thời gian load trung bình của cpu trong thời gian nhất định  
 us: phần trăm cpu dành để chạy tiến trình của user  
@@ -350,6 +354,6 @@ shared: số lượng bộ nhớ được sử dụng bỏi tmpfs
 buff/cache: số lượng bộ nhớ được sử dụng bởi kernel  
 # df command
 ## Xem dung lượng disk
-`df`
+```df```
 ## Phân vùng / là gì
 Là gốc của cây thư mục filesystem, chứa toàn bộ các file và thư mục của hệ điều hành  
