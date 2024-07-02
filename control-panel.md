@@ -49,7 +49,7 @@ CLI : v-*
 | 14 | Reseller | Có | Không | Có | Không |
 | 15 | Hỗ trợ NodeJS/Python | Có trong pro pack | Có | Không | Không
 | 16 | Thao tác cài đặt, sửa đổi gói/plugins | Dễ | Dễ | Khó | Khó |
-| 17 | Firewall CSF/LFD | Firewall có GUI | Cơ bản | Có | Có |
+| 17 | Firewall CSF/LFD | Firewall có GUI | Cơ bản | Không | Không |
 | 18 | Terminal in GUI | Không | Có | Không | Không
 | 19 | Hỗ trợ packages - Chia gói Hosting | Có | Không | Có | Có |
 | 20 | Hỗ trợ chuyển qua sử dụng LiteSpeed | Có | Chỉ OpenLiteSpeed | Có | Không
