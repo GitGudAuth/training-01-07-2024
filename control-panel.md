@@ -35,7 +35,7 @@ CLI : v-*
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | 1 | Có CLI | Không | Có | Có | Có |
 | 2 | Giới hạn users/domains | Theo gói | 1 | Nhiều users/domains | Nhiều users/domains |
-| 3 | Webpanel Miễn phí | Không | Miễn phí/Có phí | Miễn phí/Có phí | Miễn phí/Có phí |
+| 3 | Webpanel Miễn phí | Không | Miễn phí/Có phí | Miễn phí/Có phí | Miễn phí |
 | 4 | Webpanel mặc định | Apache | Apache/Nginx | OpenLiteSpeed | Apache/Nginx |
 | 5 | Hỗ trợ SSL | Có | Có | Có | Có - không ổn định |
 | 6 | File manager | Có | Có | Có | Có |
