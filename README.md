@@ -112,13 +112,15 @@ Cách tạo file PFX:
 ## Domain là gì ?
 Domain (hay tên miền) là địa chỉ độc nhất của một website trên Internet, hoạt động giống như một “ngôi nhà ảo” chứa đựng toàn bộ nội dung và thông tin của trang web. Thay vì phải ghi nhớ dãy số phức tạp của địa chỉ IP, người dùng có thể dễ dàng truy cập website bằng cách nhập tên miền vào trình duyệt.  
 Các thành phần của tên miền:
+<pre>
 
 
   .----------------------------------- protocal (ftps, http, https)
-  |        .
+  |        .-------------------------- subdomain (tên miền phụ)
   |        |
   |        |
 https://host247.vietnix.vn/webmail
+</pre>
 ## Các trạng thái của domain
 | Trạng thái | Ý nghĩa |
 | :--- | :--- |
