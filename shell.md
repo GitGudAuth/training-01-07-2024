@@ -28,20 +28,20 @@ usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface] [-b bind_address]
        ssh [-Q query_option]
 ```
 ## Dùng password
-`ssh [username]@[ip]`  
+```ssh [username]@[ip]```
 Sau đó nhập password của user
 ## Dùng key
-`ssh -i [đường đẫn đến key]/private-key [username]@[ip]`
+```ssh -i [đường đẫn đến key]/private-key [username]@[ip]```
 ## Dùng port custom
-`ssh -p [port] [username]@[ip]`
+```ssh -p [port] [username]@[ip]```
 ## scp command
 SCP (Secure Copy) là giao thức dùng để truyền tải file an toan giữa các máy tính.  
 Cú pháp: 
-`scp [options] [source] [destination]`
+```scp [options] [source] [destination]```
 ## scp 1 file
-`scp [đường dẫn đến file]/file remote@ip:[đường dẫn đích đến]`
+```scp [đường dẫn đến file]/file remote@ip:[đường dẫn đích đến]```
 ## scp 1 folder
-`scp [đường dẫn đến thư mục]/[thư mục] remote@ip:[đường dẫn đích đến]`
+```scp [đường dẫn đến thư mục]/[thư mục] remote@ip:[đường dẫn đích đến]```
 # rsync command
 Rsync là một công cụ command line rất nhanh và linh hoạt, được dùng để đồng bộ hoá file và thư mục giữa hai vị trí khác nhau.   
 Cú pháp:  
@@ -55,11 +55,11 @@ Usage: rsync [OPTION]... SRC [SRC]... DEST
   or   rsync [OPTION]... rsync://[USER@]HOST[:PORT]/SRC [DEST]
 ```
 ## rsync file
-`rsync -a file-old file-new`
+```rsync -a file-old file-new```
 ## rsync folder
-`rsync -a source/ dest/`
+```rsync -a source/ dest/```
 ## rsync increamental
-`rsync -aAXPzv folder1 folder2`
+```rsync -aAXPzv folder1 folder2```
 # cat command
 CAT (concatenate) là câu lệnh cơ bản trong linux, dùng để hiển thị nội đụng của file, nối nội dung các file với nhau,...
 Cú pháp:  
@@ -68,9 +68,9 @@ Usage: cat [OPTION]... [FILE]...
 Concatenate FILE(s) to standard output.
 ```
 ## cat nội dung 1 file
-`cat file`
+```cat file```
 ## cat dòng thứ <n> trong file
-`cat -n file`
+```cat -n file```
 ## cat nhiều dòng vào 1 file bằng EOF
 ```
 cat <<EOF  > FILE
@@ -85,9 +85,9 @@ Cú pháp:
 echo [OPTIONS] [ARGUMENTS]
 ```
 ## Dùng echo để chèn thêm 1 dòng vào cuối file
-`echo "dong moi" >> file`  
+```echo "dong moi" >> file``` 
 ## Dùng echo để overwirte nội dung của file
-`echo "overwrite" > file`
+```echo "overwrite" > file```
 # tail/head command
 tail: In ra 10 dòng cuối ở file  
 head: In ra 10 dòng đầu tiên ở file
@@ -100,23 +100,24 @@ cú pháp:
 Usage: sed [OPTION]... {script-only-if-no-other-script} [input-file]...
 ```
 ## Dùng sed để find and replace một string trong file
-`sed -i 's\old\new\g' file`
+```sed -i 's\old\new\g' file```
 # traceroute/tracert command
 Sau khi traceroute xong giải thích chi tiết kết quả trả về  
-`root@lpcomp:~# traceroute vietnix.vn`  
-`traceroute to vietnix.vn (14.225.253.240), 30 hops max, 60 byte packets`  
-` 1  192.168.0.1 (192.168.0.1)  1.796 ms  1.754 ms  3.757 ms`  
-` 2  localhost (27.71.251.149)  4.712 ms  4.687 ms  4.662 ms`  
-` 3  10.255.39.243 (10.255.39.243)  4.628 ms 10.255.39.241 (10.255.39.241)  4.517 ms  4.492 ms`  
-` 4  * * *`  
-` 5  localhost (27.68.236.46)  7.373 ms localhost (27.68.236.240)  7.370 ms localhost (27.68.236.242)  5.706 ms`  
-` 6  static.vnpt.vn (113.171.45.66)  7.369 ms 203.113.187.98 (203.113.187.98)  5.162 ms *`  
-` 7  static.vnpt.vn (113.171.45.66)  4.971 ms  4.619 ms static.vnpt.vn (113.171.45.38)  5.632 ms`  
-` 8  static.vnpt.vn (113.171.45.38)  5.590 ms static.vnpt.vn (113.171.46.226)  5.575 ms  5.552 ms`  
-` 9  172.16.34.46 (172.16.34.46)  5.538 ms static.vnpt.vn (113.171.48.190)  5.510 ms 172.16.34.46 (172.16.34.46)  5.507 ms`  
-`10  172.16.34.46 (172.16.34.46)  5.492 ms  5.477 ms *`  
-`11  static.vnpt.vn (14.225.253.240)  4.121 ms  3.974 ms  4.128 ms`  
-
+```
+root@lpcomp:~# traceroute vietnix.vn  
+traceroute to vietnix.vn (14.225.253.240), 30 hops max, 60 byte packets 
+ 1  192.168.0.1 (192.168.0.1)  1.796 ms  1.754 ms  3.757 ms
+ 2  localhost (27.71.251.149)  4.712 ms  4.687 ms  4.662 ms
+ 3  10.255.39.243 (10.255.39.243)  4.628 ms 10.255.39.241 (10.255.39.241)  4.517 ms  4.492 ms
+ 4  * * *
+ 5  localhost (27.68.236.46)  7.373 ms localhost (27.68.236.240)  7.370 ms localhost (27.68.236.242)  5.706 ms
+ 6  static.vnpt.vn (113.171.45.66)  7.369 ms 203.113.187.98 (203.113.187.98)  5.162 ms *
+ 7  static.vnpt.vn (113.171.45.66)  4.971 ms  4.619 ms static.vnpt.vn (113.171.45.38)  5.632 ms
+ 8  static.vnpt.vn (113.171.45.38)  5.590 ms static.vnpt.vn (113.171.46.226)  5.575 ms  5.552 ms
+ 9  172.16.34.46 (172.16.34.46)  5.538 ms static.vnpt.vn (113.171.48.190)  5.510 ms 172.16.34.46 (172.16.34.46)  5.507 ms
+10  172.16.34.46 (172.16.34.46)  5.492 ms  5.477 ms *
+11  static.vnpt.vn (14.225.253.240)  4.121 ms  3.974 ms  4.128 ms
+```
 Bước nhảy 1 ra 192.168.0.1 (gatewate)  
 Bước nhảy 6 - 10 ra gateway bên vnpt   
 Bước nhảy 11 đến Website vietnix.vn  
