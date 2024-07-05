@@ -2,6 +2,6 @@
 Port 2087: WHM  
 Port 2083: Customer  
 Port 2096: Webmail
-# Redirt
+# Redirect
 Temporary : code 302  
 Permanent : code 301  
