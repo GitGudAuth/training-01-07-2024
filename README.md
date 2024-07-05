@@ -190,11 +190,11 @@ systemctl reload apache2
 ```
 # c. Access Webserver
 ## Wordpress
-http://wordpress.training.vn
+http://wordpress.training.vn  
 ![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/eb731b6e-e420-4bcd-a29e-30718ff89e26)
 
 ## Laravel
-http://laravel.training.vn
+http://laravel.training.vn  
 ![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/00857514-209c-407f-b652-e62f411b2419)
 
 
@@ -305,10 +305,10 @@ sudo service nginx reload
 
 # Access Webserver
 ## Wordpress
-http://wordpress.training.vn
+http://wordpress.training.vn  
 ![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/c1d5221d-f493-4228-8bac-e1e54060860b)
 
 ## Laravel
-http://laravel.training.vn
+http://laravel.training.vn  
 ![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/6760ab5e-0258-498d-9dc9-4f7e23939d65)
 
