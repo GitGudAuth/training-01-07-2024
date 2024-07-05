@@ -32,9 +32,8 @@ curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www
 sudo vi /etc/apache2/sites-available/wordpress.training.vn.conf
 
 # Create Virtual Host
-<VirtualHost *:8080>
-    ServerName wordpress
-    ServerAlias wordpress.training.vn
+<VirtualHost *:80>
+    ServerName wordpress.training.vn
     DocumentRoot /srv/www/wordpress
     <Directory /srv/www/wordpress>
         Options FollowSymLinks
@@ -48,19 +47,10 @@ sudo vi /etc/apache2/sites-available/wordpress.training.vn.conf
     </Directory>
 </VirtualHost>
 ```
-## Change ports.conf port
-```
-vi /etc/apache2/ports.conf
-Listen 8080 # Wordpress port
-Listen 80   # Laravel port
-```
-## Edit wp-config file, add 2 lines
+## Backup wp-config.php file
 ```
 sudo -u www-data mv -v /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
 sudo -u www-data cp -v /srv/www/wordpress/wp-config.php /srv/www/wordpress/wp-config.bk
-
-define('WPSITEURL','http://localhost:8080/');
-define('WPHOME','http://localhost:8080/');
 ```
 ## Enable wordpress site
 ```
@@ -178,8 +168,7 @@ DB_PASSWORD=password
 sudo vi /etc/apache2/sites-available/laravel.training.vn.conf
 
 <VirtualHost *:80>
-    ServerName laravel
-    ServerAlias laravel.training.vn
+    ServerName laravel.training.vn
     DocumentRoot /var/www/html/laravel/public
 
     <Directory /var/www/html/laravel>
@@ -191,12 +180,6 @@ sudo vi /etc/apache2/sites-available/laravel.training.vn.conf
 
 a2ensite laravel.training.vn.conf
 ```
-## Edit apache config file
-```
-# Edit /etc/apache2/ports.conf
-Listen 8080 # Wordpress port
-Listen 80   # Laravel port
-```
 ## Add new line to /etc/apache2/apache2.conf
 ```
 <Directory /var/www/html/laravel/public>
@@ -207,11 +190,13 @@ systemctl reload apache2
 ```
 # c. Access Webserver
 ## Wordpress
-http://\<webserver-ip>\:8080
-![image](https://github.com/GitGudAuth/training-02-07-2024/assets/117452333/fbfb2b81-ffb0-4655-973e-45b846447790)
+http://wordpress.training.vn
+![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/eb731b6e-e420-4bcd-a29e-30718ff89e26)
+
 ## Laravel
-http://\<web-server-ip>\:80
-![image](https://github.com/GitGudAuth/training-02-07-2024/assets/117452333/c3d4b619-3c9b-495c-a836-b70c4571cd48)
+http://laravel.training.vn
+![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/00857514-209c-407f-b652-e62f411b2419)
+
 
 # 3. LEMP
 ## Start php-fpm service
@@ -261,7 +246,7 @@ server {
 sudo vi /etc/nginx/sites-available/wordpress.training.vn.conf
 # wordpress.training.vn.conf
 server {
-            listen 8080;
+            listen 80;
             root /srv/www/wordpress;
             index index.php index.html;
             server_name wordpress.training.vn;
@@ -320,8 +305,10 @@ sudo service nginx reload
 
 # Access Webserver
 ## Wordpress
-http://\<webserver-ip\>:8080
-![image](https://github.com/GitGudAuth/training-02-07-2024/assets/117452333/d4480148-3788-4956-be36-f6ac742b04c8)
+http://wordpress.training.vn
+![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/c1d5221d-f493-4228-8bac-e1e54060860b)
+
 ## Laravel
-http://\<webserver-ip\>:80
-![image](https://github.com/GitGudAuth/training-02-07-2024/assets/117452333/1bbc201b-bfa8-4730-a2c5-d380f5b8fdc8)
+http://laravel.training.vn
+![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/6760ab5e-0258-498d-9dc9-4f7e23939d65)
+
