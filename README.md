@@ -190,11 +190,11 @@ systemctl reload apache2
 ```
 # c. Access Webserver
 ## Wordpress
-http://wordpress.training.vn  
+http://wordpress.training.vn    
 ![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/eb731b6e-e420-4bcd-a29e-30718ff89e26)
 
 ## Laravel
-http://laravel.training.vn  
+http://laravel.training.vn    
 ![image](https://github.com/GitGudAuth/training-01-07-2024/assets/117452333/00857514-209c-407f-b652-e62f411b2419)
 
 
