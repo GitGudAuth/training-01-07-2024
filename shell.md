@@ -251,15 +251,15 @@ Cú pháp:
 Usage: chown [OPTION]... [OWNER][:[GROUP]] FILE...
   or:  chown [OPTION]... --reference=RFILE FILE...
 ```
-chattr là lệnh dùng để thay đổi tính chất của file, thay đổi sticky bit  
+chattr là lệnh dùng để thay đổi tính chất của file, thay đổi sticky bit   
 Cú pháp:  
 ```
 Usage: chattr [-RVf] [-+=aAcCdDeijPsStTuFx] [-p project] [-v version] files..
 ```
 ## Phân quyền bằng số, phân quyền bằng chữ
-1 = execute = x
-2 = write = w
-4 = read = r
+1 = execute = x  
+2 = write = w  
+4 = read = r  
 ----------  1 root root 2274 Mar  5 18:44 filedemo  
 "-" đầu tiên cho biết loại file là gì (tệp hoặc thư mục)  
 "---" 3 gạch đầu tiên cho biết quyền thực thi của owner  
