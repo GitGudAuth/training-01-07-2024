@@ -20,8 +20,6 @@ Cây thư mục nằm ở:
 **Port: 8888**  
 CLI : bt  
 ## 3.Cyber Panel
-Cây thư mục:  
-/home/cyberpanel/  
 Cây thư mục cấu hình nằm ở:  
 /usr/local/CyberCP/CyberCP/settings.py - File cấu hình chính  
 /usr/local/CyberCP/ - chứa các file data của Cyberpanel  
