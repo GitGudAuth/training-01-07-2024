@@ -1,7 +1,6 @@
 # LAMP and LEMP
 # 1. Install packages
 ## Update ubuntu server
-- [x] hello
 ```
 sudo apt update && apt upgrade -y
 ```
