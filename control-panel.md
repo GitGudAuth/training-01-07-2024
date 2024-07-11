@@ -9,7 +9,7 @@ Cây thư mục chính và cấu hìnhnằm ở:
 /usr/local/directadmin/conf/my.cnf - chi tiết kế nối mysql mặc định cho dịch vụ directadmin    
 /usr/local/directadmin/data/user/[username] - cấu hình cho một user  
 /var/log/directadmin - vị trí file log của directadmin  
-**Port: 2222**
+**Port: 2222**  
 CLI: không có
 ## 2.aaPanel
 Cây thư mục nằm ở:    
@@ -17,7 +17,7 @@ Cây thư mục nằm ở:
 /www/wwwlogs - chứa file log  
 /www/server - chứa config các service  
 /www/backup - chứa các backup  
-**Port: 8888**
+**Port: 8888**  
 CLI : bt  
 ## 3.Cyber Panel
 Cây thư mục:  
@@ -28,7 +28,7 @@ Cây thư mục cấu hình nằm ở:
 /home/cyberpanel - một số cấu hình nằm ở đây  
 /etc/cyberpanl - tool hỗ trợ  
 /home/cyberpanel/error-logs.txt - file log của cyberpanel  
-**Port: 8090**
+**Port: 8090**  
 CLI : cyberpanel  
 ## 4.VestaCP
 Cây thư mục nằm ở:  
@@ -36,12 +36,12 @@ Cây thư mục nằm ở:
 /usr/local/vestacp/conf/vesta.conf - file config chính
 /usr/local/vesta/data - thư mục data chính
 /home/[user]/web - docroot của web  
-**Port: 8083**
+**Port: 8083**  
 CLI : v-*
 ## 5.Cpanel
 Cây thư mục:  
 /var/cpanel/cpanel.conf hoặc /usr/local/cpanel/etc/cpanel.conf  
-**Port: 2082,2083(Cpanel); 2086,2087(WHM); 2095,2096(Webmail); 2089(License)**
+**Port: 2082,2083(Cpanel); 2086,2087(WHM); 2095,2096(Webmail); 2089(License)**  
 ## 6.So sánh 3 control panel
 | STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
 | :---: | :--- | :---: | :---: | :---: | :---: |
