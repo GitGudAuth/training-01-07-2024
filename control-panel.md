@@ -1,6 +1,8 @@
 # Control Panel
 ## 1.DirectAdmin
-Cây thư mục nằm ở:  
+Cây thư mục:  
+/home/$username/  
+Cây thư mục chính và cấu hìnhnằm ở:  
 /usr/local/directadmin  
 /usr/local/directadmin/conf/directadmin.conf - file config chính cho dịch vụ directadmin    
 /usr/local/directadmin/custombuild/ - thư mục cho dịch vụ custombuild    
@@ -16,7 +18,9 @@ Cây thư mục nằm ở:
 /www/backup - chứa các backup  
 CLI : bt  
 ## 3.Cyber Panel
-Cây thư mục nằm ở:  
+Cây thư mục:  
+/home/cyberpanel/  
+Cây thư mục cấu hình nằm ở:  
 /usr/local/CyberCP/CyberCP/settings.py - File cấu hình chính  
 /usr/local/CyberCP/ - chứa các file data của Cyberpanel  
 /home/cyberpanel - một số cấu hình nằm ở đây  
@@ -24,7 +28,7 @@ Cây thư mục nằm ở:
 /home/cyberpanel/error-logs.txt - file log của cyberpanel  
 CLI : cyberpanel  
 ## 4.VestaCP
-Cây thư mục nằm ở:
+Cây thư mục nằm ở:  
 /home/[user]/conf - file config cho mỗi user/domain
 /usr/local/vestacp/conf/vesta.conf - file config chính
 /usr/local/vesta/data - thư mục data chính
