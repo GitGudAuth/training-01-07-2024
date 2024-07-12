@@ -30,9 +30,9 @@ Cây thư mục cấu hình nằm ở:
 CLI : cyberpanel  
 ## 4.VestaCP
 Cây thư mục nằm ở:  
-/home/[user]/conf - file config cho mỗi user/domain
-/usr/local/vestacp/conf/vesta.conf - file config chính
-/usr/local/vesta/data - thư mục data chính
+/home/[user]/conf - file config cho mỗi user/domain  
+/usr/local/vestacp/conf/vesta.conf - file config chính  
+/usr/local/vesta/data - thư mục data chính  
 /home/[user]/web - docroot của web  
 **Port: 8083**  
 CLI : v-*
