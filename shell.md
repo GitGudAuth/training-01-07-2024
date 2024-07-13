@@ -1,14 +1,16 @@
 # ping/hping3 ping đến domain vietnix.vn sau đó giải thích
 ## hping3
 ```
-root@lpcomp:~# hping3 -1 vietnix.vn  
-HPING vietnix.vn (wlp0s20f3 103.90.224.90): icmp mode set, 28 headers + 0 data bytes
-len=28 ip=103.90.224.90 ttl=53 id=3956 icmp_seq=0 rtt=109.0 ms
-len=28 ip=103.90.224.90 ttl=53 id=4134 icmp_seq=1 rtt=6.7 ms 
-len=28 ip=103.90.224.90 ttl=53 id=4369 icmp_seq=2 rtt=5.4 ms  
-len=28 ip=103.90.224.90 ttl=53 id=4452 icmp_seq=3 rtt=8.1 ms  
-len=28 ip=103.90.224.90 ttl=53 id=4625 icmp_seq=4 rtt=7.0 ms  
-len=28 ip=103.90.224.90 ttl=53 id=4661 icmp_seq=5 rtt=6.6 ms
+root@lpcomp:~# hping3 -1 vietnix.vn -c 4
+HPING vietnix.vn (wlp0s20f3 14.225.253.240): icmp mode set, 28 headers + 0 data bytes
+len=28 ip=14.225.253.240 ttl=53 id=22780 icmp_seq=0 rtt=7.6 ms
+len=28 ip=14.225.253.240 ttl=53 id=22855 icmp_seq=1 rtt=6.2 ms
+len=28 ip=14.225.253.240 ttl=53 id=22910 icmp_seq=2 rtt=4.8 ms
+len=28 ip=14.225.253.240 ttl=53 id=22938 icmp_seq=3 rtt=4.5 ms
+
+--- vietnix.vn hping statistic ---
+4 packets transmitted, 4 packets received, 0% packet loss
+round-trip min/avg/max = 4.5/5.8/7.6 ms
 ```
 ## ping
 ```
