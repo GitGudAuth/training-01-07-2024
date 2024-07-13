@@ -1,4 +1,5 @@
 # ping/hping3 ping đến domain vietnix.vn sau đó giải thích
+## hping3
 ```
 root@lpcomp:~# hping3 -1 vietnix.vn  
 HPING vietnix.vn (wlp0s20f3 103.90.224.90): icmp mode set, 28 headers + 0 data bytes
@@ -8,7 +9,20 @@ len=28 ip=103.90.224.90 ttl=53 id=4369 icmp_seq=2 rtt=5.4 ms
 len=28 ip=103.90.224.90 ttl=53 id=4452 icmp_seq=3 rtt=8.1 ms  
 len=28 ip=103.90.224.90 ttl=53 id=4625 icmp_seq=4 rtt=7.0 ms  
 len=28 ip=103.90.224.90 ttl=53 id=4661 icmp_seq=5 rtt=6.6 ms
-```  
+```
+## ping
+```
+[nuser@rhel ~]$ ping vietnix.vn -c 4
+PING vietnix.vn (14.225.253.240) 56(84) bytes of data.
+64 bytes from static.vnpt.vn (14.225.253.240): icmp_seq=1 ttl=128 time=4.15 ms
+64 bytes from static.vnpt.vn (14.225.253.240): icmp_seq=2 ttl=128 time=6.52 ms
+64 bytes from static.vnpt.vn (14.225.253.240): icmp_seq=3 ttl=128 time=6.83 ms
+64 bytes from static.vnpt.vn (14.225.253.240): icmp_seq=4 ttl=128 time=6.05 ms
+
+--- vietnix.vn ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3006ms
+rtt min/avg/max/mdev = 4.154/5.886/6.827/1.037 ms
+```
 ## ttl= là gì
 ## time= là gì
 ttl là time to live, là thời gian sống của một gói tin  
