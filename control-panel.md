@@ -26,7 +26,7 @@ Cây thư mục cấu hình nằm ở:
 /home/cyberpanel - một số cấu hình nằm ở đây  
 /etc/cyberpanl - tool hỗ trợ  
 /home/cyberpanel/error-logs.txt - file log của cyberpanel  
-/home/[example.com] - doc root 
+/home/[example.com] - doc root  
 **Port: 8090**  
 CLI : cyberpanel  
 ## 4.VestaCP
