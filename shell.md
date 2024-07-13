@@ -25,8 +25,7 @@ PING vietnix.vn (14.225.253.240) 56(84) bytes of data.
 4 packets transmitted, 4 received, 0% packet loss, time 3006ms
 rtt min/avg/max/mdev = 4.154/5.886/6.827/1.037 ms
 ```
-## ttl= là gì
-## time= là gì
+## ttl= là gì ? time= là gì ?
 ttl là time to live, là thời gian sống của một gói tin  
 time là thời gian gói tin trả về, tính bằng ms, thời gian trả về càng thấp mạng càng nhanh.  
 ttl = 53  
