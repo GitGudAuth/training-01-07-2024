@@ -1,7 +1,7 @@
 # Control Panel
 ## 1.DirectAdmin
 Cây thư mục:  
-/home/$username/  
+/home/[username]/domains/[example.com]  
 Cây thư mục chính và cấu hìnhnằm ở:  
 /usr/local/directadmin  
 /usr/local/directadmin/conf/directadmin.conf - file config chính cho dịch vụ directadmin    
@@ -26,6 +26,7 @@ Cây thư mục cấu hình nằm ở:
 /home/cyberpanel - một số cấu hình nằm ở đây  
 /etc/cyberpanl - tool hỗ trợ  
 /home/cyberpanel/error-logs.txt - file log của cyberpanel  
+/home/[example.com] - doc root 
 **Port: 8090**  
 CLI : cyberpanel  
 ## 4.VestaCP
