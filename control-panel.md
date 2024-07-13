@@ -1,7 +1,7 @@
 # Control Panel
 ## 1.DirectAdmin
 Cây thư mục:  
-/home/[username]/domains/[example.com]/public_html  
+/home/admin/domains/[example.com]/public_html  
 Cây thư mục chính và cấu hìnhnằm ở:  
 /usr/local/directadmin  
 /usr/local/directadmin/conf/directadmin.conf - file config chính cho dịch vụ directadmin    
