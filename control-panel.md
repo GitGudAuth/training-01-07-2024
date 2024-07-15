@@ -58,7 +58,7 @@ cPanel Vietnix hỗ trợ chạy web source code nào (perl, python, nodejs,...)
 
 Cách reload hosting cPanel khi full Number Of Processes tại Vietnix >> cagefs -m <user>  
 
-Cách truy cập giao diện quản lý cPanel WHM ? >> IP:2087  
+Cách truy cập giao diện quản lý cPanel WHM ? >> http://<IP>:2086 | https://<IP>:2087
 
 PHP X-ray là gì ? >> php x-ray dùng để trace cụ thể thời gian thực thi các function php, giúp phát hiện các func nào gây chậm website khách hàng  
 
@@ -90,6 +90,23 @@ MultiPhp Manager là gì ? >> (cPanel): Có thể tùy chọn các phiên bản 
 
 Khách nên trỏ record nào khi sử dụng hosting Vietnix >> A và NS  
 
+Cách bật truy cập MySQL từ xa trên Hosting cPanel >> Login user cPanel -> Databases -> Remote MySQL -> Add Access Host  
+
+Cách restore full backup trong user cPanel Hosting Vietnix ? >> Login user Cpanel -> Backup -> Backup Restoration.  
+
+Cách kiểm tra số lượng của Number Of Processes đang chạy trong user cPanel ? >> ps aux | grep <username>  
+
+ Các cách có thể upload dữ liệu của user lên Hosting cPanel ? >> File Manager , FTP , ? scp ... FileZilla, WinSCP ??  
+
+ Khác nhau giữa Alias Domain và Redirect Domain ? >>  
+ 
+|                Alias Domain               	|                     Redirect Domain                     	|
+|:-----------------------------------------	  |:-------------------------------------------------------   |
+| Là tên miền khác cho một website hiện có. 	| Chuyển hướng lưu lượng truy cập đến một website khác.   	|
+| Chỉ hiển thị website chính.               	| Có thể hiển thị website riêng hoặc website chính.       	|
+| Chia sẻ địa chỉ IP với website chính.     	| Có thể có địa chỉ IP riêng hoặc chung với website đích. 	|
+| Tốt cho SEO.                              	| Ít ảnh hưởng SEO hơn.                                   	|
+| Dễ sử dụng và quản lý.                    	| Có thể phức tạp hơn để thiết lập và quản lý.            	|
 
 
 ## 6.So sánh 3 control panel
