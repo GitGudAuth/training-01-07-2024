@@ -62,7 +62,7 @@ Cách truy cập giao diện quản lý cPanel WHM ? >> IP:2087
 
 PHP X-ray là gì ? >> php x-ray dùng để trace cụ thể thời gian thực thi các function php, giúp phát hiện các func nào gây chậm website khách hàng  
 
-Vị trí access log mặc định trên hosting cPanel >> /usr/local/cpanel/logs/access_log  
+Vị trí access log mặc định trên hosting cPanel >> /usr/local/cpanel/logs/access_log | Login user cPanel -> Metrics -> Raw Access 
 
 Cách tìm add-on domain thuộc user nào trong WHM >> WHM -> List Subdomains -> nhập vào domain cần tìm  
 
