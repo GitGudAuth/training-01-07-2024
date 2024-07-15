@@ -42,41 +42,41 @@ Cây thư mục:
 /var/cpanel/cpanel.conf hoặc /usr/local/cpanel/etc/cpanel.conf  
 **Port: 2082,2083(Cpanel); 2086,2087(WHM); 2095,2096(Webmail); 2089(License)**  
   
-Cách xem log IP truy cập vào Domain ở user trên Hosting cPanel >> Login user cPanel -> Metrics -> Visitors  
+Cách xem log IP truy cập vào Domain ở user trên Hosting cPanel >> **Login user cPanel -> Metrics -> Visitors**  
 
-cPanel Vietnix hỗ trợ chạy web source code nào >> PHP, NodeJS, HTML/CSS/Javascript  
+cPanel Vietnix hỗ trợ chạy web source code nào >> **PHP, NodeJS, HTML/CSS/Javascript**  
 
-Cách hiện file ẩn trong File Manager. >> Login user cPanel -> File Manager -> Settings > Show hidden files  
+Cách hiện file ẩn trong File Manager. >> **Login user cPanel -> File Manager -> Settings > Show hidden files**  
 
 Phát biểu sai về ưu điểm Jetbackup so với cPanel Backup >>  
 
-Cách chặn truy cập quốc tế đến 1 domain ở user cPanel >> .htaccess  
+Cách chặn truy cập quốc tế đến 1 domain ở user cPanel >> **.htaccess**  
 
-Cấu hình trỏ domain về NS host179.vietnix.vn ? >> ns1.host179.vietnix.vn ns2.host179.vietnix.vn  
+Cấu hình trỏ domain về NS host179.vietnix.vn ? >> **ns1.host179.vietnix.vn ns2.host179.vietnix.vn**  
 
-cPanel Vietnix hỗ trợ chạy web source code nào (perl, python, nodejs,...) >> Php, NodeJS, Python  
+cPanel Vietnix hỗ trợ chạy web source code nào (perl, python, nodejs,...) >> **Php, NodeJS, Python**  
 
-Cách reload hosting cPanel khi full Number Of Processes tại Vietnix >> cagefs -m <user>  
+Cách reload hosting cPanel khi full Number Of Processes tại Vietnix >> **cagefs -m <user>**  
 
-Cách truy cập giao diện quản lý cPanel WHM ? >> http://<IP>:2086 | https://<IP>:2087
+Cách truy cập giao diện quản lý cPanel WHM ? >> **http://<IP>:2086 | https://<IP>:2087**
 
-PHP X-ray là gì ? >> php x-ray dùng để trace cụ thể thời gian thực thi các function php, giúp phát hiện các func nào gây chậm website khách hàng  
+PHP X-ray là gì ? >> **php x-ray dùng để trace cụ thể thời gian thực thi các function php, giúp phát hiện các func nào gây chậm website khách hàng**  
 
-Vị trí access log mặc định trên hosting cPanel >> /usr/local/cpanel/logs/access_log | Login user cPanel -> Metrics -> Raw Access 
+Vị trí access log mặc định trên hosting cPanel >> **/usr/local/cpanel/logs/access_log | Login user cPanel -> Metrics -> Raw Access** 
 
-Cách tìm add-on domain thuộc user nào trong WHM >> WHM -> List Subdomains -> nhập vào domain cần tìm  
+Cách tìm add-on domain thuộc user nào trong WHM >> **WHM -> List Subdomains -> nhập vào domain cần tìm**  
 
-Các file nào dưới đây mặc định không nhìn thấy được trong File Manager cPanel >> .htaccess  
+Các file nào dưới đây mặc định không nhìn thấy được trong File Manager cPanel >> **.htaccess**  
 
-Cách tạo thêm một trang web của user trong Hosting cPanel ? >> Login cPanel -> Domain -> Addon Domain -> Cấu hình database -> Kiểm tra website  
+Cách tạo thêm một trang web của user trong Hosting cPanel ? >> **Login cPanel -> Domain -> Addon Domain -> Cấu hình database -> Kiểm tra website**  
 
-Select PHP Version là gì ? >> (Cloudlinux) Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.
+Select PHP Version là gì ? >> **(Cloudlinux) Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.**
 
-Cách kiểm tra số lượng của Number Of Processes đang chạy trong user cPanel ? » ps aux | grep <user>  
+Cách kiểm tra số lượng của Number Of Processes đang chạy trong user cPanel ? » **ps aux | grep <user>**  
 
-Tính năng Mailing List trong cPanel là gì ? >> Mailing Lists trên cPanel là một công cụ giúp bạn gửi email đến một nhóm lớn người một cách dễ dàng và hiệu quả. 
+Tính năng Mailing List trong cPanel là gì ? >> **Mailing Lists trên cPanel là một công cụ giúp bạn gửi email đến một nhóm lớn người một cách dễ dàng và hiệu quả.** 
 
-File manager ở user cPanel hỗ trợ giao thức nào ? >> http  
+File manager ở user cPanel hỗ trợ giao thức nào ? >> **http**  
 
 Khác nhau giữa MultiPHP Manager và Select PHP Version >>  
 ```
@@ -84,19 +84,19 @@ MultiPHP Manager (hỗ trợ bởi cPanel): Có thể tùy chọn các phiên b�
 Select PHP Version (hỗ trợ bởi cloudlinux): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.
 ```
 
-Cách download Access Log của user ở hosting cPanel >> Login user cPanel -> Metrics -> Raw Access Logs  
+Cách download Access Log của user ở hosting cPanel >> **Login user cPanel -> Metrics -> Raw Access Logs**  
 
-MultiPhp Manager là gì ? >> (cPanel): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.  
+MultiPhp Manager là gì ? >> **(cPanel): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.**  
 
-Khách nên trỏ record nào khi sử dụng hosting Vietnix >> A và NS  
+Khách nên trỏ record nào khi sử dụng hosting Vietnix >> **A và NS**  
 
-Cách bật truy cập MySQL từ xa trên Hosting cPanel >> Login user cPanel -> Databases -> Remote MySQL -> Add Access Host  
+Cách bật truy cập MySQL từ xa trên Hosting cPanel >> **Login user cPanel -> Databases -> Remote MySQL -> Add Access Host**  
 
-Cách restore full backup trong user cPanel Hosting Vietnix ? >> Login user Cpanel -> Backup -> Backup Restoration.  
+Cách restore full backup trong user cPanel Hosting Vietnix ? >> **Login user Cpanel -> Backup -> Backup Restoration.**  
 
-Cách kiểm tra số lượng của Number Of Processes đang chạy trong user cPanel ? >> ps aux | grep <username>  
+Cách kiểm tra số lượng của Number Of Processes đang chạy trong user cPanel ? >> **ps aux | grep <username>**  
 
- Các cách có thể upload dữ liệu của user lên Hosting cPanel ? >> File Manager , FTP , ? scp ... FileZilla, WinSCP ??  
+ Các cách có thể upload dữ liệu của user lên Hosting cPanel ? >> **File Manager , FTP , ? scp ... FileZilla, WinSCP ??**  
 
  Khác nhau giữa Alias Domain và Redirect Domain ? >>  
  
