@@ -83,6 +83,15 @@ Khác nhau giữa MultiPHP Manager và Select PHP Version >>
 MultiPHP Manager (hỗ trợ bởi cPanel): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.
 Select PHP Version (hỗ trợ bởi cloudlinux): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.
 ```
+
+Cách download Access Log của user ở hosting cPanel >> Login user cPanel -> Metrics -> Raw Access Logs  
+
+MultiPhp Manager là gì ? >> (cPanel): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.  
+
+Khách nên trỏ record nào khi sử dụng hosting Vietnix >> A và NS  
+
+
+
 ## 6.So sánh 3 control panel
 | STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
 | :---: | :--- | :---: | :---: | :---: | :---: |
