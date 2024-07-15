@@ -41,6 +41,7 @@ CLI : v-*
 Cây thư mục:  
 /var/cpanel/cpanel.conf hoặc /usr/local/cpanel/etc/cpanel.conf  
 **Port: 2082,2083(Cpanel); 2086,2087(WHM); 2095,2096(Webmail); 2089(License)**  
+  
 Cách xem log IP truy cập vào Domain ở user trên Hosting cPanel >> Login user cPanel -> Metrics -> Visitors  
 cPanel Vietnix hỗ trợ chạy web source code nào >> PHP, NodeJS, HTML/CSS/Javascript  
 Cách hiện file ẩn trong File Manager. >> Login user cPanel -> File Manager -> Settings > Show hidden files  
