@@ -41,6 +41,24 @@ CLI : v-*
 Cây thư mục:  
 /var/cpanel/cpanel.conf hoặc /usr/local/cpanel/etc/cpanel.conf  
 **Port: 2082,2083(Cpanel); 2086,2087(WHM); 2095,2096(Webmail); 2089(License)**  
+Cách xem log IP truy cập vào Domain ở user trên Hosting cPanel >> Login user cPanel -> Metrics -> Visitors  
+cPanel Vietnix hỗ trợ chạy web source code nào >> PHP, NodeJS, HTML/CSS/Javascript  
+Cách hiện file ẩn trong File Manager. >> Login user cPanel -> File Manager -> Settings > Show hidden files  
+Phát biểu sai về ưu điểm Jetbackup so với cPanel Backup >>  
+Cách chặn truy cập quốc tế đến 1 domain ở user cPanel >> .htaccess  
+Cấu hình trỏ domain về NS host179.vietnix.vn ? >> ns1.host179.vietnix.vn ns2.host179.vietnix.vn  
+cPanel Vietnix hỗ trợ chạy web source code nào (perl, python, nodejs,...) >> Php, NodeJS, Python  
+Cách reload hosting cPanel khi full Number Of Processes tại Vietnix >> cagefs -m <user>  
+Cách truy cập giao diện quản lý cPanel WHM ? >> IP:2087  
+PHP X-ray là gì ? >> php x-ray dùng để trace cụ thể thời gian thực thi các function php, giúp phát hiện các func nào gây chậm website khách hàng  
+Vị trí access log mặc định trên hosting cPanel >> /usr/local/cpanel/logs/access_log  
+Cách tìm add-on domain thuộc user nào trong WHM >> WHM -> List Subdomains -> nhập vào domain cần tìm  
+Các file nào dưới đây mặc định không nhìn thấy được trong File Manager cPanel >> .htaccess  
+Cách tạo thêm một trang web của user trong Hosting cPanel ? >> Login cPanel -> Domain -> Addon Domain -> Cấu hình database -> Kiểm tra website  
+Select PHP Version là gì ? >> Cloudlinux  
+Cách kiểm tra số lượng của Number Of Processes đang chạy trong user cPanel ? » ps aux | grep <user>  
+Tính năng Mailing List trong cPanel là gì ? >> Mailing Lists trên cPanel là một công cụ giúp bạn gửi email đến một nhóm lớn người một cách dễ dàng và hiệu quả. 
+File manager ở user cPanel hỗ trợ giao thức nào ? >> http  
 ## 6.So sánh 3 control panel
 | STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
 | :---: | :--- | :---: | :---: | :---: | :---: |
