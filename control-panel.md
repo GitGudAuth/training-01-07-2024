@@ -56,10 +56,15 @@ Vị trí access log mặc định trên hosting cPanel >> /usr/local/cpanel/log
 Cách tìm add-on domain thuộc user nào trong WHM >> WHM -> List Subdomains -> nhập vào domain cần tìm  
 Các file nào dưới đây mặc định không nhìn thấy được trong File Manager cPanel >> .htaccess  
 Cách tạo thêm một trang web của user trong Hosting cPanel ? >> Login cPanel -> Domain -> Addon Domain -> Cấu hình database -> Kiểm tra website  
-Select PHP Version là gì ? >> Cloudlinux  
+Select PHP Version là gì ? >> (Cloudlinux) Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.
 Cách kiểm tra số lượng của Number Of Processes đang chạy trong user cPanel ? » ps aux | grep <user>  
 Tính năng Mailing List trong cPanel là gì ? >> Mailing Lists trên cPanel là một công cụ giúp bạn gửi email đến một nhóm lớn người một cách dễ dàng và hiệu quả. 
 File manager ở user cPanel hỗ trợ giao thức nào ? >> http  
+Khác nhau giữa MultiPHP Manager và Select PHP Version >>  
+```
+MultiPHP Manager (hỗ trợ bởi cPanel): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.
+Select PHP Version (hỗ trợ bởi cloudlinux): Có thể tùy chọn các phiên bản PHP khác nhau cho từng website.
+```
 ## 6.So sánh 3 control panel
 | STT | Tiêu chí | DirectAdmin | aaPanel | CyberPanel | VestaCP |
 | :---: | :--- | :---: | :---: | :---: | :---: |
