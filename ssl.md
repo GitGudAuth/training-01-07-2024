@@ -129,7 +129,7 @@ Các thành phần của tên miền:
   |        |       |    |     | 
 https://host247.vietnix.vn/webmail
 </pre>
-## Các trạng thái của domain
+## Trạng thái tên miền tại Đơn vị Cấp phát tên miền (Registry)
 | Trạng thái | Ý nghĩa |
 | :--- | :--- |
 | OK / active | Tên miền hoạt động |
@@ -150,6 +150,16 @@ https://host247.vietnix.vn/webmail
 | serverTransferProhibited | Trạng thái không cho phép transfer tên miền. |
 | serverUpdateProhibited | Trạng thái không cho phép cập nhật tên miền. |
 | transferPeriod | Đây là trạng thái cho phép sau khi transfer tên miền thành thông thì nhà đăng ký mới có thể yêu cầu nhà cung cấp xóa tên miền. |  
+
+## Trạng thái tên miền tại Nhà đăng ký tên miền (Registrar)  
+| Trạng thái | Ý nghĩa |
+| :--- | :--- |
+| clientDeleteProhibited | Cấm hủy domain/ Không cho phép xóa tên miền. |
+| clientHold | Trạng thái tạm ngừng tên miền (suspend tên miền). |
+| clientRenewProhibited | Cấm gia hạn tên miền/ Không cho phép gia hạn tên miền. |
+| clientTransferProhibited | Trạng thái không cho phép transfer tên miền (Cấm chuyển đổi nhà đăng ký). |
+| clientUpdateProhibited | Cấm cập nhật thông tin/ Không cho phép cập nhật thông tin. |
+
 ## Subdomain là gì?
 Subdomain là tên miền phụ của tên miền chính (Domain).
 Tên miền phụ có thể được sử dụng để tạo trang web mới mà không cần phải mua thêm tên miền mới.  
